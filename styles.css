@@ -35,8 +35,11 @@ border-radius: 20px;
 padding: 5px 10px 5px 10px;
 font-family: 'Red Hat Display', sans-serif;
 border: 2px solid black;
+}
 
-
+.pick-country:hover {
+  color: white;
+  background-color: black;
 }
 
 /* CHANGE COLOR OF FLAG BUTTON */
