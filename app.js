@@ -62,6 +62,26 @@ function randomNum() {
     const nigeriaWhite = document.querySelector('.nigeria-white');
     const nigeriaGreen2 = document.querySelector('.nigeria-green2');
 
+  // Russia
+
+    const russia = document.querySelector('.russia');
+    const russiaWhite = document.querySelector('.russia-white');
+    const russiaBlue = document.querySelector('.russia-blue');
+    const russiaRed = document.querySelector('.russia-red');
+
+  // Yemen
+
+    const yemen = document.querySelector('.yemen');
+    const yemenRed = document.querySelector('.yemen-red');
+    const yemenWhite = document.querySelector('.yemen-white');
+    const yemenBlack = document.querySelector('.yemen-black');
+
+  // Netherlands
+
+    const netherlands = document.querySelector('.netherlands');
+    const netherlandsRed = document.querySelector('.netherlands-red');
+    const netherlandsWhite = document.querySelector('.netherlands-white');
+    const netherlandsBlue = document.querySelector('.netherlands-blue');
 
 // counter for every time a country is selected
 
@@ -147,6 +167,42 @@ if (selectCountry.value === '6') {
 
 }
 
+// if russia is selected - opacity
+
+if (selectCountry.value === '7') {
+  counter +=1;
+  russia.style.opacity = "1";
+  russia.style.zIndex = counter;
+  russiaWhite.style.backgroundColor = "rgb(255, 255, 255)";
+  russiaBlue.style.backgroundColor = "rgb(0, 51, 160)";
+  russiaRed.style.backgroundColor = "rgb(218, 41, 28)";
+
+}
+
+// if yemen is selected - opacity
+
+if (selectCountry.value === '8') {
+  counter +=1;
+  yemen.style.opacity = "1";
+  yemen.style.zIndex = counter;
+  yemenRed.style.backgroundColor = "rgb(206, 17, 38)";
+  yemenWhite.style.backgroundColor = "rgb(255, 255, 255)";
+  yemenBlack.style.backgroundColor = "rgb(0, 0, 0)";
+
+}
+
+// if netherlands is selected - opacity
+
+if (selectCountry.value === '9') {
+  counter +=1;
+  netherlands.style.opacity = "1";
+  netherlands.style.zIndex = counter;
+  netherlandsRed.style.backgroundColor = "rgb(174, 28, 40)";
+  netherlandsWhite.style.backgroundColor = "rgb(255, 255, 255)";
+  netherlandsBlue.style.backgroundColor = "rgb(33, 70, 139)";
+
+}
+
 })
 
 
@@ -207,6 +263,34 @@ changeColorBtn.addEventListener('click', () => {
     nigeriaWhite.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
     nigeriaGreen2.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
   }
+
+  // if Russia is selected - change color
+
+  if (selectCountry.value === '7') {
+
+    russiaWhite.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+    russiaBlue.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+    russiaRed.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+  }
+
+  // if Yemen is selected - change color
+
+  if (selectCountry.value === '8') {
+
+    yemenRed.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+    yemenWhite.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+    yemenBlack.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+  }
+
+  // if Netherlands is selected - change color
+
+  if (selectCountry.value === '9') {
+
+    netherlandsRed.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+    netherlandsWhite.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+    netherlandsBlue.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+  }
+
 
 
 
