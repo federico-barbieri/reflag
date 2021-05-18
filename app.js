@@ -83,6 +83,27 @@ function randomNum() {
     const netherlandsWhite = document.querySelector('.netherlands-white');
     const netherlandsBlue = document.querySelector('.netherlands-blue');
 
+  // Luxembourg
+
+    const luxembourg = document.querySelector('.luxembourg');
+    const luxembourgRed = document.querySelector('.luxembourg-red');
+    const luxembourgWhite = document.querySelector('.luxembourg-white');
+    const luxembourgBlue = document.querySelector('.luxembourg-blue');
+
+  // Hungary
+
+      const hungary = document.querySelector('.hungary');
+      const hungaryRed = document.querySelector('.hungary-red');
+      const hungaryWhite = document.querySelector('.hungary-white');
+      const hungaryGreen = document.querySelector('.hungary-green');
+
+  // Gabon
+
+      const gabon = document.querySelector('.gabon');
+      const gabonGreen = document.querySelector('.gabon-green');
+      const gabonYellow = document.querySelector('.gabon-yellow');
+      const gabonBlue = document.querySelector('.gabon-blue');
+
 // counter for every time a country is selected
 
 var counter = 0;
@@ -203,6 +224,42 @@ if (selectCountry.value === '9') {
 
 }
 
+// if luxembourg is selected - opacity
+
+if (selectCountry.value === '10') {
+  counter +=1;
+  luxembourg.style.opacity = "1";
+  luxembourg.style.zIndex = counter;
+  luxembourgRed.style.backgroundColor = "rgb(239,51,64)";
+  luxembourgWhite.style.backgroundColor = "rgb(255, 255, 255)";
+  luxembourgBlue.style.backgroundColor = "rgb(0,163,224)";
+
+}
+
+// if hungary is selected - opacity
+
+if (selectCountry.value === '11') {
+  counter +=1;
+  hungary.style.opacity = "1";
+  hungary.style.zIndex = counter;
+  hungaryRed.style.backgroundColor = "rgb(200,16,46)";
+  hungaryWhite.style.backgroundColor = "rgb(255, 255, 255)";
+  hungaryGreen.style.backgroundColor = "rgb(0,132,61)";
+
+}
+
+// if gabon is selected - opacity
+
+if (selectCountry.value === '12') {
+  counter +=1;
+  gabon.style.opacity = "1";
+  gabon.style.zIndex = counter;
+  gabonGreeen.style.backgroundColor = "rgb(0,150,57)";
+  gabonYellow.style.backgroundColor = "rgb(255,209,0)";
+  gabonBlue.style.backgroundColor = "rgb(0,61,165)";
+
+}
+
 })
 
 
@@ -289,6 +346,33 @@ changeColorBtn.addEventListener('click', () => {
     netherlandsRed.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
     netherlandsWhite.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
     netherlandsBlue.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+  }
+
+  // if Luxembourg is selected - change color
+
+  if (selectCountry.value === '10') {
+
+    luxembourgRed.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+    luxembourgWhite.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+    luxembourgBlue.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+  }
+
+  // if Hungary is selected - change color
+
+  if (selectCountry.value === '11') {
+
+    hungaryRed.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+    hungaryWhite.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+    hungaryGreen.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+  }
+
+  // if Gabon is selected - change color
+
+  if (selectCountry.value === '12') {
+
+    gabonGreen.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+    gabonYellow.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+    gabonBlue.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
   }
 
 
