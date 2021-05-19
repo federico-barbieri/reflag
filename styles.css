@@ -454,3 +454,99 @@ border: 2px solid black;
   height: 200px;
   background-color: rgb(0,61,165);
 }
+
+/* GERMANY */
+
+.germany {
+
+  width: 600px;
+  height: 350px;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  position: absolute;
+  transform: translateY(200px);
+}
+
+.germany-black {
+  width: 600px;
+  height: 200px;
+  background-color: rgb(0, 0, 0);
+}
+
+.germany-red {
+  width: 600px;
+  height: 200px;
+  background-color: rgb(221, 0, 0);
+}
+
+.germany-yellow {
+  width: 600px;
+  height: 200px;
+  background-color: rgb(255, 206, 0);
+}
+
+/* BULGARIA */
+
+.bulgaria {
+
+  width: 600px;
+  height: 350px;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  position: absolute;
+  transform: translateY(200px);
+}
+
+.bulgaria-white {
+  width: 600px;
+  height: 200px;
+  background-color: rgb(255, 255, 255);
+}
+
+.bulgaria-green {
+  width: 600px;
+  height: 200px;
+  background-color: rgb(0, 150, 110);
+}
+
+.bulgaria-red {
+  width: 600px;
+  height: 200px;
+  background-color: rgb(214, 38, 18);
+}
+
+/* AUSTRIA */
+
+.austria {
+
+  width: 600px;
+  height: 350px;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  position: absolute;
+  transform: translateY(200px);
+}
+
+.austria-red {
+  width: 600px;
+  height: 200px;
+  background-color: rgb(239, 51, 64);
+}
+
+.austria-white {
+  width: 600px;
+  height: 200px;
+  background-color: rgb(255,255,255);
+}
+
+.austria-red2 {
+  width: 600px;
+  height: 200px;
+  background-color: rgb(239, 51, 64);
+}
