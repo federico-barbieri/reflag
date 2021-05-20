@@ -125,6 +125,39 @@ function randomNum() {
           const austriaWhite = document.querySelector('.austria-white');
           const austriaRed2 = document.querySelector('.austria-red2');
 
+  // Armenia
+
+          const armenia = document.querySelector('.armenia');
+          const armeniaRed = document.querySelector('.armenia-red');
+          const armeniaBlue = document.querySelector('.armenia-blue');
+          const armeniaYellow = document.querySelector('.armenia-yellow');
+
+  // Estonia
+
+          const estonia = document.querySelector('.estonia');
+          const estoniaBlue = document.querySelector('.estonia-blue');
+          const estoniaBlack = document.querySelector('.estonia-black');
+          const estoniaWhite = document.querySelector('.estonia-white');
+
+  // Lithuania
+
+          const lithuania = document.querySelector('.lithuania');
+          const lithuaniaYellow = document.querySelector('.lithuania-yellow');
+          const lithuaniaGreen = document.querySelector('.lithuania-green');
+          const lithuaniaRed = document.querySelector('.lithuania-red');
+
+  // Ukraine
+
+          const ukraine = document.querySelector('.ukraine');
+          const ukraineBlue = document.querySelector('.ukraine-blue');
+          const ukraineYellow = document.querySelector('.ukraine-yellow');
+
+  // Poland
+
+          const poland = document.querySelector('.poland');
+          const polandWhite = document.querySelector('.poland-white');
+          const polandRed = document.querySelector('.poland-red');
+
 //
 //
 // counter for every time a country is selected
@@ -319,6 +352,66 @@ if (selectCountry.value === '15') {
 
 }
 
+// if armenia is selected - opacity
+
+if (selectCountry.value === '16') {
+  counter +=1;
+  armenia.style.opacity = "1";
+  armenia.style.zIndex = counter;
+  armeniaRed.style.backgroundColor = "rgb(217, 0, 18)";
+  armeniaBlue.style.backgroundColor = "rgb(0, 51, 160)";
+  armeniaYellow.style.backgroundColor = "rgb(242, 168, 0)";
+
+}
+
+// if estonia is selected - opacity
+
+if (selectCountry.value === '17') {
+  counter +=1;
+  estonia.style.opacity = "1";
+  estonia.style.zIndex = counter;
+  estoniaBlue.style.backgroundColor = "rgb(0,114,206)";
+  estoniaBlack.style.backgroundColor = "rgb(0,0,0)";
+  estoniaWhite.style.backgroundColor = "rgb(255, 255, 255)";
+
+}
+
+// if lithuania is selected - opacity
+
+if (selectCountry.value === '18') {
+  counter +=1;
+  lithuania.style.opacity = "1";
+  lithuania.style.zIndex = counter;
+  lithuaniaYellow.style.backgroundColor = "rgb(255,184,28)";
+  lithuaniaGreen.style.backgroundColor = "rgb(0,106,56)";
+  lithuaniaRed.style.backgroundColor = "rgb(190,58,52)";
+
+}
+
+// if ukraine is selected - opacity
+
+if (selectCountry.value === '19') {
+  counter +=1;
+  ukraine.style.opacity = "1";
+  ukraine.style.zIndex = counter;
+  ukraineBlue.style.backgroundColor = "rgb(0, 87, 184)";
+  ukraineYellow.style.backgroundColor = "rgb(254, 221, 0)";
+
+
+}
+
+// if poland is selected - opacity
+
+if (selectCountry.value === '20') {
+  counter +=1;
+  poland.style.opacity = "1";
+  poland.style.zIndex = counter;
+  polandWhite.style.backgroundColor = "rgb(255,255,255)";
+  polandRed.style.backgroundColor = "rgb(210,38,48)";
+
+
+}
+
 })
 
 
@@ -459,6 +552,51 @@ changeColorBtn.addEventListener('click', () => {
     austriaRed.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
     austriaWhite.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
     austriaRed2.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+  }
+
+  // if Armenia is selected - change color
+
+  if (selectCountry.value === '16') {
+
+    armeniaRed.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+    armeniaBlue.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+    armeniaYellow.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+  }
+
+  // if Estonia is selected - change color
+
+  if (selectCountry.value === '17') {
+
+    estoniaBlue.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+    estoniaBlack.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+    estoniaWhite.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+  }
+
+  // if Lithuania is selected - change color
+
+  if (selectCountry.value === '18') {
+
+    lithuaniaYellow.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+    lithuaniaGreen.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+    lithuaniaRed.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+  }
+
+  // if Ukraine is selected - change color
+
+  if (selectCountry.value === '19') {
+
+    ukraineBlue.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+    ukraineYellow.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+
+  }
+
+  // if Poland is selected - change color
+
+  if (selectCountry.value === '20') {
+
+    polandWhite.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+    polandRed.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+
   }
 
 
