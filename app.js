@@ -158,6 +158,12 @@ function randomNum() {
           const polandWhite = document.querySelector('.poland-white');
           const polandRed = document.querySelector('.poland-red');
 
+  // Japan
+
+                  const japan = document.querySelector('.japan');
+                  const japanWhite = document.querySelector('.japan-white');
+                  const japanRed = document.querySelector('.japan-red');
+
 //
 //
 // counter for every time a country is selected
@@ -412,6 +418,18 @@ if (selectCountry.value === '20') {
 
 }
 
+// if japan is selected - opacity
+
+if (selectCountry.value === '21') {
+  counter +=1;
+  japan.style.opacity = "1";
+  japan.style.zIndex = counter;
+  japanWhite.style.backgroundColor = "rgb(255,255,255)";
+  japanRed.style.backgroundColor = "rgb(239,51,64)";
+
+
+}
+
 })
 
 
@@ -596,6 +614,15 @@ changeColorBtn.addEventListener('click', () => {
 
     polandWhite.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
     polandRed.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+
+  }
+
+  // if Japan is selected - change color
+
+  if (selectCountry.value === '21') {
+
+    japanWhite.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+    japanRed.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
 
   }
 
