@@ -160,9 +160,16 @@ function randomNum() {
 
   // Japan
 
-                  const japan = document.querySelector('.japan');
-                  const japanWhite = document.querySelector('.japan-white');
-                  const japanRed = document.querySelector('.japan-red');
+          const japan = document.querySelector('.japan');
+          const japanWhite = document.querySelector('.japan-white');
+          const japanRed = document.querySelector('.japan-red');
+
+  // Chad
+
+          const chad = document.querySelector('.chad');
+          const chadBlue = document.querySelector('.chad-blue');
+          const chadYellow = document.querySelector('.chad-yellow');
+          const chadRed = document.querySelector('.chad-red');
 
 //
 //
@@ -430,6 +437,18 @@ if (selectCountry.value === '21') {
 
 }
 
+// if chad is selected - opacity
+
+if (selectCountry.value === '22') {
+  counter +=1;
+  chad.style.opacity = "1";
+  chad.style.zIndex = counter;
+  chadBlue.style.backgroundColor = "rgb(0, 32, 91)";
+  chadYellow.style.backgroundColor = "rgb(255, 205, 0)";
+  chadRed.style.backgroundColor = "rgb(200, 16, 46)";
+
+}
+
 })
 
 
@@ -624,6 +643,15 @@ changeColorBtn.addEventListener('click', () => {
     japanWhite.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
     japanRed.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
 
+  }
+
+  // if Chad is selected - change color
+
+  if (selectCountry.value === '22') {
+
+    chadBlue.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+    chadYellow.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+    chadRed.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
   }
 
 
