@@ -171,6 +171,13 @@ function randomNum() {
           const chadYellow = document.querySelector('.chad-yellow');
           const chadRed = document.querySelector('.chad-red');
 
+
+  // Bangladesh
+
+          const bangladesh = document.querySelector('.bangladesh');
+          const bangladeshGreen = document.querySelector('.bangladesh-green');
+          const bangladeshRed = document.querySelector('.bangladesh-red');
+
 //
 //
 // counter for every time a country is selected
@@ -449,6 +456,18 @@ if (selectCountry.value === '22') {
 
 }
 
+// if bangladesh is selected - opacity
+
+if (selectCountry.value === '23') {
+  counter +=1;
+  bangladesh.style.opacity = "1";
+  bangladesh.style.zIndex = counter;
+  bangladeshGreen.style.backgroundColor = "rgb(0, 103, 71)";
+  bangladeshRed.style.backgroundColor = "rgb(218, 41, 28)";
+
+
+}
+
 })
 
 
@@ -652,6 +671,15 @@ changeColorBtn.addEventListener('click', () => {
     chadBlue.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
     chadYellow.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
     chadRed.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+  }
+
+  // if Bangladesh is selected - change color
+
+  if (selectCountry.value === '23') {
+
+    bangladeshGreen.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+    bangladeshRed.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+
   }
 
 
