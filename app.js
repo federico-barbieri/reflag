@@ -178,6 +178,14 @@ function randomNum() {
           const bangladeshGreen = document.querySelector('.bangladesh-green');
           const bangladeshRed = document.querySelector('.bangladesh-red');
 
+  // Bahamas
+
+          const bahamas = document.querySelector('.bahamas');
+          const bahamasBlue = document.querySelector('.bahamas-blue');
+          const bahamasYellow = document.querySelector('.bahamas-yellow');
+          const bahamasBlue2 = document.querySelector('.bahamas-blue2');
+          const bahamasBlack = document.querySelector('.bahamas-black');
+
 //
 //
 // counter for every time a country is selected
@@ -468,6 +476,20 @@ if (selectCountry.value === '23') {
 
 }
 
+// if bahamas is selected - opacity
+
+if (selectCountry.value === '24') {
+  counter +=1;
+  bahamas.style.opacity = "1";
+  bahamas.style.zIndex = counter;
+  bahamasBlue.style.backgroundColor = "rgb(0, 169, 206)";
+  bahamasYellow.style.backgroundColor = "rgb(253, 218, 36)";
+  bahamasBlue2.style.backgroundColor = "rgb(0, 169, 206)";
+  bahamasBlack.style.borderLeft = "250px solid rgb(0, 0, 0)";
+
+
+}
+
 })
 
 
@@ -679,6 +701,17 @@ changeColorBtn.addEventListener('click', () => {
 
     bangladeshGreen.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
     bangladeshRed.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+
+  }
+
+  // if Bahamas is selected - change color
+
+  if (selectCountry.value === '24') {
+
+    bahamasBlue.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+    bahamasYellow.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+    bahamasBlue2.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+    bahamasBlack.style.borderLeft = '250px solid rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
 
   }
 
