@@ -186,6 +186,13 @@ function randomNum() {
           const bahamasBlue2 = document.querySelector('.bahamas-blue2');
           const bahamasBlack = document.querySelector('.bahamas-black');
 
+  // Benin
+
+          const benin = document.querySelector('.benin');
+          const beninGreen = document.querySelector('.benin-green');
+          const beninYellow = document.querySelector('.benin-yellow');
+          const beninRed = document.querySelector('.benin-red');
+
 //
 //
 // counter for every time a country is selected
@@ -486,8 +493,17 @@ if (selectCountry.value === '24') {
   bahamasYellow.style.backgroundColor = "rgb(253, 218, 36)";
   bahamasBlue2.style.backgroundColor = "rgb(0, 169, 206)";
   bahamasBlack.style.borderLeft = "250px solid rgb(0, 0, 0)";
+}
 
+// if benin is selected - opacity
 
+if (selectCountry.value === '25') {
+  counter +=1;
+  benin.style.opacity = "1";
+  benin.style.zIndex = counter;
+  beninGreen.style.backgroundColor = "rgb(34, 136, 72)";
+  beninYellow.style.backgroundColor = "rgb(253, 218, 36)";
+  beninRed.style.backgroundColor = "rgb(238, 39, 55)";
 }
 
 })
@@ -713,6 +729,15 @@ changeColorBtn.addEventListener('click', () => {
     bahamasBlue2.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
     bahamasBlack.style.borderLeft = '250px solid rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
 
+  }
+
+  // if Benin is selected - change color
+
+  if (selectCountry.value === '25') {
+
+    beninGreen.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+    beninYellow.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+    beninRed.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
   }
 
 
