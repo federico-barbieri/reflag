@@ -207,11 +207,18 @@ function randomNum() {
           const laosBlue = document.querySelector('.laos-blue');
           const laosWhite = document.querySelector('.laos-white');
 
-  // Laos
+  // Latvia
 
           const latvia = document.querySelector('.latvia');
           const latviaRed = document.querySelector('.latvia-red');
           const latviaWhite = document.querySelector('.latvia-white');
+
+  // Madagascar
+
+          const madagascar = document.querySelector('.madagascar');
+          const madagascarRed = document.querySelector('.madagascar-red');
+          const madagascarGreen = document.querySelector('.madagascar-green');
+          const madagascarWhite = document.querySelector('.madagascar-white');
 //
 //
 // counter for every time a country is selected
@@ -557,6 +564,17 @@ if (selectCountry.value === '28') {
   latviaWhite.style.backgroundColor = "rgb(255, 255, 255)";
 }
 
+// if madagascar is selected - opacity
+
+if (selectCountry.value === '29') {
+  counter +=1;
+  madagascar.style.opacity = "1";
+  madagascar.style.zIndex = counter;
+  madagascarGreen.style.backgroundColor = "rgb(0,132,61)";
+  madagascarRed.style.backgroundColor = "rgb(249,66,58)";
+  madagascarWhite.style.backgroundColor = "rgb(255, 255, 255)";
+}
+
 })
 
 
@@ -815,6 +833,15 @@ changeColorBtn.addEventListener('click', () => {
 
     latviaRed.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
     latviaWhite.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+  }
+
+  // if Madagascar is selected - change color
+
+  if (selectCountry.value === '29') {
+
+    madagascarRed.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+    madagascarGreen.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+    madagascarWhite.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
   }
 
 
