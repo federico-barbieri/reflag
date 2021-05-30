@@ -219,6 +219,14 @@ function randomNum() {
           const madagascarRed = document.querySelector('.madagascar-red');
           const madagascarGreen = document.querySelector('.madagascar-green');
           const madagascarWhite = document.querySelector('.madagascar-white');
+
+  // Mauritius
+
+                  const mauritius = document.querySelector('.mauritius');
+                  const mauritiusRed = document.querySelector('.mauritius-red');
+                  const mauritiusGreen = document.querySelector('.mauritius-green');
+                  const mauritiusYellow = document.querySelector('.mauritius-yellow');
+                  const mauritiusBlue = document.querySelector('.mauritius-blue');
 //
 //
 // counter for every time a country is selected
@@ -575,6 +583,18 @@ if (selectCountry.value === '29') {
   madagascarWhite.style.backgroundColor = "rgb(255, 255, 255)";
 }
 
+// if mauritius is selected - opacity
+
+if (selectCountry.value === '30') {
+  counter +=1;
+  mauritius.style.opacity = "1";
+  mauritius.style.zIndex = counter;
+  mauritiusGreen.style.backgroundColor = "rgb(0,150,57)";
+  mauritiusRed.style.backgroundColor = "rgb(239,51,64)";
+  mauritiusYellow.style.backgroundColor = "rgb(255,209,0)";
+  mauritiusBlue.style.backgroundColor = "rgb(0,94,184)";
+}
+
 })
 
 
@@ -842,6 +862,16 @@ changeColorBtn.addEventListener('click', () => {
     madagascarRed.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
     madagascarGreen.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
     madagascarWhite.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+  }
+
+  // if Mauritius is selected - change color
+
+  if (selectCountry.value === '30') {
+
+    mauritiusRed.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+    mauritiusGreen.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+    mauritiusYellow.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+    mauritiusBlue.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
   }
 
 
