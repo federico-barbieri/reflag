@@ -222,11 +222,20 @@ function randomNum() {
 
   // Mauritius
 
-                  const mauritius = document.querySelector('.mauritius');
-                  const mauritiusRed = document.querySelector('.mauritius-red');
-                  const mauritiusGreen = document.querySelector('.mauritius-green');
-                  const mauritiusYellow = document.querySelector('.mauritius-yellow');
-                  const mauritiusBlue = document.querySelector('.mauritius-blue');
+          const mauritius = document.querySelector('.mauritius');
+          const mauritiusRed = document.querySelector('.mauritius-red');
+          const mauritiusGreen = document.querySelector('.mauritius-green');
+          const mauritiusYellow = document.querySelector('.mauritius-yellow');
+          const mauritiusBlue = document.querySelector('.mauritius-blue');
+
+
+  // Niger
+
+          const niger = document.querySelector('.niger');
+          const nigerOrange = document.querySelector('.niger-orange');
+          const nigerWhite = document.querySelector('.niger-white');
+          const nigerGreen = document.querySelector('.niger-green');
+          const nigerCircle = document.querySelector('.niger-circle');
 //
 //
 // counter for every time a country is selected
@@ -595,6 +604,18 @@ if (selectCountry.value === '30') {
   mauritiusBlue.style.backgroundColor = "rgb(0,94,184)";
 }
 
+// if niger is selected - opacity
+
+if (selectCountry.value === '31') {
+  counter +=1;
+  niger.style.opacity = "1";
+  niger.style.zIndex = counter;
+  nigerOrange.style.backgroundColor = "rgb(255,178,91)";
+  nigerWhite.style.backgroundColor = "rgb(255,255,255)";
+  nigerGreen.style.backgroundColor = "rgb(0,150,57)";
+  nigerCircle.style.backgroundColor = "rgb(255,178,91)";
+}
+
 })
 
 
@@ -874,6 +895,15 @@ changeColorBtn.addEventListener('click', () => {
     mauritiusBlue.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
   }
 
+  // if Niger is selected - change color
+
+  if (selectCountry.value === '31') {
+
+    nigerOrange.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+    nigerWhite.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+    nigerGreen.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+    nigerCircle.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+  }
 
 
 
