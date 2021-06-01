@@ -236,6 +236,14 @@ function randomNum() {
           const nigerWhite = document.querySelector('.niger-white');
           const nigerGreen = document.querySelector('.niger-green');
           const nigerCircle = document.querySelector('.niger-circle');
+
+  // Botswana
+
+          const botswana = document.querySelector('.botswana');
+          const botswanaBlue = document.querySelector('.botswana-blue');
+          const botswanaWhite = document.querySelector('.botswana-white');
+          const botswanaBlack = document.querySelector('.botswana-black');
+
 //
 //
 // counter for every time a country is selected
@@ -616,6 +624,18 @@ if (selectCountry.value === '31') {
   nigerCircle.style.backgroundColor = "rgb(255,178,91)";
 }
 
+// if botswana is selected - opacity
+
+if (selectCountry.value === '32') {
+  counter +=1;
+  botswana.style.opacity = "1";
+  botswana.style.zIndex = counter;
+  botswanaBlue.style.backgroundColor = "rgb(171, 202, 233)";
+  botswanaWhite.style.backgroundColor = "rgb(255,255,255)";
+  botswanaBlack.style.backgroundColor = "rgb(0, 0, 0)";
+
+}
+
 })
 
 
@@ -903,6 +923,16 @@ changeColorBtn.addEventListener('click', () => {
     nigerWhite.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
     nigerGreen.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
     nigerCircle.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+  }
+
+  // if Niger is selected - change color
+
+  if (selectCountry.value === '32') {
+
+    botswanaBlue.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+    botswanaWhite.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+    botswanaBlack.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+    
   }
 
 
