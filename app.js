@@ -244,6 +244,14 @@ function randomNum() {
           const botswanaWhite = document.querySelector('.botswana-white');
           const botswanaBlack = document.querySelector('.botswana-black');
 
+  // Botswana
+
+          const chile = document.querySelector('.chile');
+          const chileBlue = document.querySelector('.chile-blue');
+          const chileWhite = document.querySelector('.chile-white');
+          const chileRed = document.querySelector('.chile-red');
+          const chileStar = document.querySelector('.chile-star');
+
 //
 //
 // counter for every time a country is selected
@@ -636,6 +644,19 @@ if (selectCountry.value === '32') {
 
 }
 
+// if chile is selected - opacity
+
+if (selectCountry.value === '33') {
+  counter +=1;
+  chile.style.opacity = "1";
+  chile.style.zIndex = counter;
+  chileBlue.style.backgroundColor = "rgb(0,51,160)";
+  chileWhite.style.backgroundColor = "rgb(255,255,255)";
+  chileRed.style.backgroundColor = "rgb(218,41,28)";
+  chileStar.style.color = "rgb(255, 255, 255)";
+}
+
+
 })
 
 
@@ -932,7 +953,18 @@ changeColorBtn.addEventListener('click', () => {
     botswanaBlue.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
     botswanaWhite.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
     botswanaBlack.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
-    
+
+  }
+
+  // if Chile is selected - change color
+
+  if (selectCountry.value === '33') {
+
+    chileBlue.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+    chileWhite.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+    chileRed.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+    chileStar.style.color = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+
   }
 
 
