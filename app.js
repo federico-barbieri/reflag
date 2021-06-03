@@ -244,13 +244,24 @@ function randomNum() {
           const botswanaWhite = document.querySelector('.botswana-white');
           const botswanaBlack = document.querySelector('.botswana-black');
 
-  // Botswana
+  // Chile
 
           const chile = document.querySelector('.chile');
           const chileBlue = document.querySelector('.chile-blue');
           const chileWhite = document.querySelector('.chile-white');
           const chileRed = document.querySelector('.chile-red');
           const chileStar = document.querySelector('.chile-star');
+
+
+  // China
+
+          const china = document.querySelector('.china');
+          const chinaRed = document.querySelector('.china-red');
+          const chinaStar1 = document.querySelector('.china-star1');
+          const chinaStar2 = document.querySelector('.china-star2');
+          const chinaStar3 = document.querySelector('.china-star3');
+          const chinaStar4 = document.querySelector('.china-star4');
+          const chinaStar5 = document.querySelector('.china-star5');
 
 //
 //
@@ -656,6 +667,20 @@ if (selectCountry.value === '33') {
   chileStar.style.color = "rgb(255, 255, 255)";
 }
 
+// if china is selected - opacity
+
+if (selectCountry.value === '34') {
+  counter +=1;
+  china.style.opacity = "1";
+  china.style.zIndex = counter;
+  chinaRed.style.backgroundColor = "rgb (222, 41, 16)";
+  chinaStar1.style.color = "rgb (255, 222, 0)";
+  chinaStar2.style.color = "rgb (255, 222, 0)";
+  chinaStar3.style.color = "rgb (255, 222, 0)";
+  chinaStar4.style.color = "rgb (255, 222, 0)";
+  chinaStar5.style.color = "rgb (255, 222, 0)";
+}
+
 
 })
 
@@ -964,6 +989,19 @@ changeColorBtn.addEventListener('click', () => {
     chileWhite.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
     chileRed.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
     chileStar.style.color = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+
+  }
+
+  // if China is selected - change color
+
+  if (selectCountry.value === '34') {
+
+    chinaRed.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+    chinaStar1.style.color = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+    chinaStar2.style.color = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+    chinaStar3.style.color = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+    chinaStar4.style.color = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+    chinaStar5.style.color = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
 
   }
 

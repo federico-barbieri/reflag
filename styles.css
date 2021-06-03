@@ -1180,3 +1180,68 @@ border: 2px solid black;
   transform: scale(6);
   z-index: 10;
 }
+
+/* CHINA */
+
+.china {
+
+  width: 600px;
+  height: 350px;
+  border: 2px solid black;
+
+  opacity: 0;
+  position: absolute;
+  transform: translateY(200px);
+}
+
+.china-red {
+  width: 600px;
+  height: 350px;
+  background-color: rgb(222, 41, 16);
+  position: absolute;
+}
+
+.china-star1{
+  color: rgb(255, 222, 0);
+  position: absolute;
+  padding-left: 23px;
+  padding-bottom: 106px;
+  transform: scale(6);
+  z-index: 10;
+  padding-top: 100px;
+}
+
+.china-star2{
+  color: rgb(255, 222, 0);
+  position: absolute;
+  padding-left: 120px;
+  padding-top: 100px;
+  transform: scale(2);
+  z-index: 10;
+}
+.china-star3{
+  color: rgb(255, 222, 0);
+  position: absolute;
+  padding-left: 140px;
+  padding-top: 75px;
+  transform: scale(2);
+  z-index: 10;
+}
+
+.china-star4{
+  color: rgb(255, 222, 0);
+  position: absolute;
+  padding-left: 143px;
+  padding-top: 45px;
+  transform: scale(2);
+  z-index: 10;
+}
+
+.china-star5{
+  color: rgb(255, 222, 0);
+  position: absolute;
+  padding-left: 120px;
+  padding-top: 20px;
+  transform: scale(2);
+  z-index: 10;
+}
