@@ -263,6 +263,13 @@ function randomNum() {
           const chinaStar4 = document.querySelector('.china-star4');
           const chinaStar5 = document.querySelector('.china-star5');
 
+  // China
+
+          const denmark = document.querySelector('.denmark');
+          const denmarkRed = document.querySelector('.denmark-red');
+          const denmarkWhite1 = document.querySelector('.denmark-white1');
+          const denmarkWhite2 = document.querySelector('.denmark-white2');
+
 //
 //
 // counter for every time a country is selected
@@ -673,12 +680,23 @@ if (selectCountry.value === '34') {
   counter +=1;
   china.style.opacity = "1";
   china.style.zIndex = counter;
-  chinaRed.style.backgroundColor = "rgb (222, 41, 16)";
-  chinaStar1.style.color = "rgb (255, 222, 0)";
-  chinaStar2.style.color = "rgb (255, 222, 0)";
-  chinaStar3.style.color = "rgb (255, 222, 0)";
-  chinaStar4.style.color = "rgb (255, 222, 0)";
-  chinaStar5.style.color = "rgb (255, 222, 0)";
+  chinaRed.style.backgroundColor = "rgb(222, 41, 16)";
+  chinaStar1.style.color = "rgb(255, 222, 0)";
+  chinaStar2.style.color = "rgb(255, 222, 0)";
+  chinaStar3.style.color = "rgb(255, 222, 0)";
+  chinaStar4.style.color = "rgb(255, 222, 0)";
+  chinaStar5.style.color = "rgb(255, 222, 0)";
+}
+
+// if denmark is selected - opacity
+
+if (selectCountry.value === '35') {
+  counter +=1;
+  denmark.style.opacity = "1";
+  denmark.style.zIndex = counter;
+  denmarkRed.style.backgroundColor = "rgb(218,41,28)";
+  denmarkWhite1.style.backgroundColor = "rgb(255,255,255)";
+  denmarkWhite2.style.backgroundColor = "rgb(255,255,255)";
 }
 
 
@@ -1002,8 +1020,18 @@ changeColorBtn.addEventListener('click', () => {
     chinaStar3.style.color = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
     chinaStar4.style.color = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
     chinaStar5.style.color = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
-
   }
+
+  // if Denmark is selected - change color
+
+  if (selectCountry.value === '35') {
+
+    denmarkRed.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+    denmarkWhite1.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+    denmarkWhite2.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+}
+
+
 
 
 
