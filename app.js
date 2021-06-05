@@ -263,12 +263,19 @@ function randomNum() {
           const chinaStar4 = document.querySelector('.china-star4');
           const chinaStar5 = document.querySelector('.china-star5');
 
-  // China
+  // Denmark
 
           const denmark = document.querySelector('.denmark');
           const denmarkRed = document.querySelector('.denmark-red');
           const denmarkWhite1 = document.querySelector('.denmark-white1');
           const denmarkWhite2 = document.querySelector('.denmark-white2');
+
+  // Finland
+
+          const finland = document.querySelector('.finland');
+          const finlandWhite = document.querySelector('.finland-white');
+          const finlandBlue1 = document.querySelector('.finland-blue1');
+          const finlandBlue2 = document.querySelector('.finland-blue2');
 
 //
 //
@@ -699,6 +706,17 @@ if (selectCountry.value === '35') {
   denmarkWhite2.style.backgroundColor = "rgb(255,255,255)";
 }
 
+// if finland is selected - opacity
+
+if (selectCountry.value === '36') {
+  counter +=1;
+  finland.style.opacity = "1";
+  finland.style.zIndex = counter;
+  finlandWhite.style.backgroundColor = "rgb(255,255,255)";
+  finlandBlue1.style.backgroundColor = "rgb(0,47,108)";
+  finlandBlue2.style.backgroundColor = "rgb(0,47,108)";
+}
+
 
 })
 
@@ -1029,6 +1047,15 @@ changeColorBtn.addEventListener('click', () => {
     denmarkRed.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
     denmarkWhite1.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
     denmarkWhite2.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+}
+
+// if Finland is selected - change color
+
+if (selectCountry.value === '36') {
+
+  finlandWhite.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+  finlandBlue1.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+  finlandBlue2.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
 }
 
 
