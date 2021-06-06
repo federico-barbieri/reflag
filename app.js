@@ -277,6 +277,14 @@ function randomNum() {
           const finlandBlue1 = document.querySelector('.finland-blue1');
           const finlandBlue2 = document.querySelector('.finland-blue2');
 
+  // Iceland
+
+          const iceland = document.querySelector('.iceland');
+          const icelandBlue = document.querySelector('.iceland-blue');
+          const icelandWhite1 = document.querySelector('.iceland-white1');
+          const icelandWhite2 = document.querySelector('.iceland-white2');
+          const icelandRed1 = document.querySelector('.iceland-red1');
+          const icelandRed2 = document.querySelector('.iceland-red2');
 //
 //
 // counter for every time a country is selected
@@ -717,6 +725,18 @@ if (selectCountry.value === '36') {
   finlandBlue2.style.backgroundColor = "rgb(0,47,108)";
 }
 
+// if iceland is selected - opacity
+
+if (selectCountry.value === '37') {
+  counter +=1;
+  iceland.style.opacity = "1";
+  iceland.style.zIndex = counter;
+  icelandBlue.style.backgroundColor = "rgb(0,48,135)";
+  icelandWhite1.style.backgroundColor = "rgb(255,255,255)";
+  icelandWhite2.style.backgroundColor = "rgb(255,255,255)";
+  icelandRed1.style.backgroundColor = "rgb(210,38,48)";
+  icelandRed2.style.backgroundColor = "rgb(210,38,48)";
+}
 
 })
 
@@ -1056,6 +1076,17 @@ if (selectCountry.value === '36') {
   finlandWhite.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
   finlandBlue1.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
   finlandBlue2.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+}
+
+// if Iceland is selected - change color
+
+if (selectCountry.value === '37') {
+
+  icelandBlue.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+  icelandWhite1.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+  icelandWhite2.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+  icelandRed1.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+  icelandRed2.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
 }
 
 
