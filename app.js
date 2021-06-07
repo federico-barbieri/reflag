@@ -285,6 +285,15 @@ function randomNum() {
           const icelandWhite2 = document.querySelector('.iceland-white2');
           const icelandRed1 = document.querySelector('.iceland-red1');
           const icelandRed2 = document.querySelector('.iceland-red2');
+
+  // Micronesia
+
+          const micronesia = document.querySelector('.micronesia');
+          const micronesiaBlue = document.querySelector('.micronesia-blue');
+          const micronesiaStar1 = document.querySelector('.micronesia-star1');
+          const micronesiaStar2 = document.querySelector('.micronesia-star2');
+          const micronesiaStar3 = document.querySelector('.micronesia-star3');
+          const micronesiaStar4 = document.querySelector('.micronesia-star4');
 //
 //
 // counter for every time a country is selected
@@ -738,6 +747,19 @@ if (selectCountry.value === '37') {
   icelandRed2.style.backgroundColor = "rgb(210,38,48)";
 }
 
+// if micronesia is selected - opacity
+
+if (selectCountry.value === '38') {
+  counter +=1;
+  micronesia.style.opacity = "1";
+  micronesia.style.zIndex = counter;
+  micronesiaBlue.style.backgroundColor = "rgb(171,202,233)";
+  micronesiaStar1.style.color = "rgb(255,255,255)";
+  micronesiaStar2.style.color = "rgb(255,255,255)";
+  micronesiaStar3.style.color = "rgb(255,255,255)";
+  micronesiaStar4.style.color = "rgb(255,255,255)";
+}
+
 })
 
 
@@ -1087,6 +1109,17 @@ if (selectCountry.value === '37') {
   icelandWhite2.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
   icelandRed1.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
   icelandRed2.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+}
+
+// if Micronesia is selected - change color
+
+if (selectCountry.value === '38') {
+
+  micronesiaBlue.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+  micronesiaStar1.style.color = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+  micronesiaStar2.style.color = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+  micronesiaStar3.style.color = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+  micronesiaStar4.style.color = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
 }
 
 
