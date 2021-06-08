@@ -1425,3 +1425,33 @@ border: 2px solid black;
   transform: scale(2);
   z-index: 10;
 }
+
+/* MOROCCO */
+
+.morocco {
+
+  width: 600px;
+  height: 350px;
+  border: 2px solid black;
+
+  opacity: 0;
+  position: absolute;
+  transform: translateY(200px);
+}
+
+.morocco-red {
+  width: 600px;
+  height: 350px;
+  background-color: rgb(191, 13, 62);
+  position: absolute;
+}
+
+.morocco-star{
+  color: rgb(76, 140, 43);
+  position: absolute;
+  padding-left: 72px;
+  padding-bottom: 80px;
+  transform: scale(7);
+  z-index: 10;
+  padding-top: 100px;
+}

@@ -294,6 +294,13 @@ function randomNum() {
           const micronesiaStar2 = document.querySelector('.micronesia-star2');
           const micronesiaStar3 = document.querySelector('.micronesia-star3');
           const micronesiaStar4 = document.querySelector('.micronesia-star4');
+
+ // Morocco
+
+          const morocco = document.querySelector('.morocco');
+          const moroccoRed = document.querySelector('.morocco-red');
+          const moroccoStar = document.querySelector('.morocco-star');
+
 //
 //
 // counter for every time a country is selected
@@ -304,6 +311,7 @@ var counter = 0;
 // SELECT COUNTRY EVENT LISTENER
 
 selectCountry.addEventListener('change', () => {
+
 
 
 
@@ -760,6 +768,16 @@ if (selectCountry.value === '38') {
   micronesiaStar4.style.color = "rgb(255,255,255)";
 }
 
+// if morocco is selected - opacity
+
+if (selectCountry.value === '39') {
+  counter +=1;
+  morocco.style.opacity = "1";
+  morocco.style.zIndex = counter;
+  moroccoRed.style.backgroundColor = "rgb(191, 13, 62)";
+  moroccoStar.style.color = "rgb(76, 140, 43)";
+}
+
 })
 
 
@@ -1122,13 +1140,13 @@ if (selectCountry.value === '38') {
   micronesiaStar4.style.color = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
 }
 
+// if Morocco is selected - change color
 
+if (selectCountry.value === '39') {
 
-
-
-
-
-
+  moroccoRed.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+  moroccoStar.style.color = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+}
 
 
 })
