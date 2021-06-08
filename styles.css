@@ -20,20 +20,26 @@ body {
 /* REFLAG TITLE */
 
 .reflag {
+  position: absolute;
+  height: 20vh;
   text-align: center;
-  margin-top: 80%;
   font-family: 'Red Hat Display', sans-serif;
+  font-size: 30px;
+  transform: translateY(-100px);
 }
 
 /* PICK COUNTRY SELECTOR */
 
 .pick-country {
-margin-top: 50px;
+position: absolute;
 cursor: pointer;
 border-radius: 20px;
 padding: 5px 10px 5px 10px;
 font-family: 'Red Hat Display', sans-serif;
 border: 2px solid black;
+z-index: 100;
+transform: translateY(-20px);
+
 }
 
 .pick-country:hover {
@@ -44,11 +50,13 @@ border: 2px solid black;
 /* CHANGE COLOR OF FLAG BUTTON */
 
 .change-color {
-  margin-top: 400px;
+  position: absolute;
   font-family: 'Red Hat Display', sans-serif;
   border-radius: 20px;
   padding: 10px 10px 10px 10px;
   width: 120px;
+  z-index: 100;
+  transform: translateY(450px);
 }
 
 .change-color:hover {

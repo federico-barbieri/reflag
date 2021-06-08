@@ -784,7 +784,7 @@ if (selectCountry.value === '39') {
 // CHANGE COLOR EVENT LISTENER
 
 changeColorBtn.addEventListener('click', () => {
-
+console.log("nice");
 // if France is selected - change color
 
   if (selectCountry.value === '1') {
