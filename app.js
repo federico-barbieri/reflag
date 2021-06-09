@@ -301,6 +301,14 @@ function randomNum() {
           const moroccoRed = document.querySelector('.morocco-red');
           const moroccoStar = document.querySelector('.morocco-star');
 
+// Senegal
+
+          const senegal = document.querySelector('.senegal');
+          const senegalGreen = document.querySelector('.senegal-green');
+          const senegalYellow = document.querySelector('.senegal-yellow');
+          const senegalRed = document.querySelector('.senegal-red');
+          const senegalStar = document.querySelector('.senegal-star');
+
 //
 //
 // counter for every time a country is selected
@@ -778,6 +786,18 @@ if (selectCountry.value === '39') {
   moroccoStar.style.color = "rgb(76, 140, 43)";
 }
 
+// if senegal is selected - opacity
+
+if (selectCountry.value === '40') {
+  counter +=1;
+  senegal.style.opacity = "1";
+  senegal.style.zIndex = counter;
+  senegalGreen.style.backgroundColor = "rgb(0,150,57)";
+  senegalYellow.style.backgroundColor = "rgb(255, 209, 0)";
+  senegalRed.style.backgroundColor = "rgb(239, 51, 64)";
+  senegalStar.style.color = "rgb(0,150,57)";
+}
+
 })
 
 
@@ -1146,6 +1166,16 @@ if (selectCountry.value === '39') {
 
   moroccoRed.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
   moroccoStar.style.color = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+}
+
+// if Senegal is selected - change color
+
+if (selectCountry.value === '40') {
+
+  senegalGreen.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+  senegalYellow.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+  senegalRed.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+  senegalStar.style.color = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
 }
 
 
