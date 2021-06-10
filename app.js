@@ -113,201 +113,208 @@ function randomNum() {
 
   // Bulgaria
 
-          const bulgaria = document.querySelector('.bulgaria');
-          const bulgariaWhite = document.querySelector('.bulgaria-white');
-          const bulgariaGreen = document.querySelector('.bulgaria-green');
-          const bulgariaRed = document.querySelector('.bulgaria-red');
+      const bulgaria = document.querySelector('.bulgaria');
+      const bulgariaWhite = document.querySelector('.bulgaria-white');
+      const bulgariaGreen = document.querySelector('.bulgaria-green');
+      const bulgariaRed = document.querySelector('.bulgaria-red');
 
   // Austria
 
-          const austria = document.querySelector('.austria');
-          const austriaRed = document.querySelector('.austria-red');
-          const austriaWhite = document.querySelector('.austria-white');
-          const austriaRed2 = document.querySelector('.austria-red2');
+      const austria = document.querySelector('.austria');
+      const austriaRed = document.querySelector('.austria-red');
+      const austriaWhite = document.querySelector('.austria-white');
+      const austriaRed2 = document.querySelector('.austria-red2');
 
   // Armenia
 
-          const armenia = document.querySelector('.armenia');
-          const armeniaRed = document.querySelector('.armenia-red');
-          const armeniaBlue = document.querySelector('.armenia-blue');
-          const armeniaYellow = document.querySelector('.armenia-yellow');
+      const armenia = document.querySelector('.armenia');
+      const armeniaRed = document.querySelector('.armenia-red');
+      const armeniaBlue = document.querySelector('.armenia-blue');
+      const armeniaYellow = document.querySelector('.armenia-yellow');
 
   // Estonia
 
-          const estonia = document.querySelector('.estonia');
-          const estoniaBlue = document.querySelector('.estonia-blue');
-          const estoniaBlack = document.querySelector('.estonia-black');
-          const estoniaWhite = document.querySelector('.estonia-white');
+      const estonia = document.querySelector('.estonia');
+      const estoniaBlue = document.querySelector('.estonia-blue');
+      const estoniaBlack = document.querySelector('.estonia-black');
+      const estoniaWhite = document.querySelector('.estonia-white');
 
   // Lithuania
 
-          const lithuania = document.querySelector('.lithuania');
-          const lithuaniaYellow = document.querySelector('.lithuania-yellow');
-          const lithuaniaGreen = document.querySelector('.lithuania-green');
-          const lithuaniaRed = document.querySelector('.lithuania-red');
+      const lithuania = document.querySelector('.lithuania');
+      const lithuaniaYellow = document.querySelector('.lithuania-yellow');
+      const lithuaniaGreen = document.querySelector('.lithuania-green');
+      const lithuaniaRed = document.querySelector('.lithuania-red');
 
   // Ukraine
 
-          const ukraine = document.querySelector('.ukraine');
-          const ukraineBlue = document.querySelector('.ukraine-blue');
-          const ukraineYellow = document.querySelector('.ukraine-yellow');
+      const ukraine = document.querySelector('.ukraine');
+      const ukraineBlue = document.querySelector('.ukraine-blue');
+      const ukraineYellow = document.querySelector('.ukraine-yellow');
 
   // Poland
 
-          const poland = document.querySelector('.poland');
-          const polandWhite = document.querySelector('.poland-white');
-          const polandRed = document.querySelector('.poland-red');
+     const poland = document.querySelector('.poland');
+     const polandWhite = document.querySelector('.poland-white');
+     const polandRed = document.querySelector('.poland-red');
 
   // Japan
 
-          const japan = document.querySelector('.japan');
-          const japanWhite = document.querySelector('.japan-white');
-          const japanRed = document.querySelector('.japan-red');
+     const japan = document.querySelector('.japan');
+     const japanWhite = document.querySelector('.japan-white');
+     const japanRed = document.querySelector('.japan-red');
 
   // Chad
 
-          const chad = document.querySelector('.chad');
-          const chadBlue = document.querySelector('.chad-blue');
-          const chadYellow = document.querySelector('.chad-yellow');
-          const chadRed = document.querySelector('.chad-red');
+     const chad = document.querySelector('.chad');
+     const chadBlue = document.querySelector('.chad-blue');
+     const chadYellow = document.querySelector('.chad-yellow');
+     const chadRed = document.querySelector('.chad-red');
 
 
   // Bangladesh
 
-          const bangladesh = document.querySelector('.bangladesh');
-          const bangladeshGreen = document.querySelector('.bangladesh-green');
-          const bangladeshRed = document.querySelector('.bangladesh-red');
+      const bangladesh = document.querySelector('.bangladesh');
+      const bangladeshGreen = document.querySelector('.bangladesh-green');
+      const bangladeshRed = document.querySelector('.bangladesh-red');
 
   // Bahamas
 
-          const bahamas = document.querySelector('.bahamas');
-          const bahamasBlue = document.querySelector('.bahamas-blue');
-          const bahamasYellow = document.querySelector('.bahamas-yellow');
-          const bahamasBlue2 = document.querySelector('.bahamas-blue2');
-          const bahamasBlack = document.querySelector('.bahamas-black');
+      const bahamas = document.querySelector('.bahamas');
+      const bahamasBlue = document.querySelector('.bahamas-blue');
+      const bahamasYellow = document.querySelector('.bahamas-yellow');
+      const bahamasBlue2 = document.querySelector('.bahamas-blue2');
+      const bahamasBlack = document.querySelector('.bahamas-black');
 
   // Benin
 
-          const benin = document.querySelector('.benin');
-          const beninGreen = document.querySelector('.benin-green');
-          const beninYellow = document.querySelector('.benin-yellow');
-          const beninRed = document.querySelector('.benin-red');
+      const benin = document.querySelector('.benin');
+      const beninGreen = document.querySelector('.benin-green');
+      const beninYellow = document.querySelector('.benin-yellow');
+      const beninRed = document.querySelector('.benin-red');
 
   // Colombia
 
-          const colombia = document.querySelector('.colombia');
-          const colombiaYellow = document.querySelector('.colombia-yellow');
-          const colombiaBlue = document.querySelector('.colombia-blue');
-          const colombiaRed = document.querySelector('.colombia-red');
+      const colombia = document.querySelector('.colombia');
+      const colombiaYellow = document.querySelector('.colombia-yellow');
+      const colombiaBlue = document.querySelector('.colombia-blue');
+      const colombiaRed = document.querySelector('.colombia-red');
 
   // Laos
 
-          const laos = document.querySelector('.laos');
-          const laosRed = document.querySelector('.laos-red');
-          const laosBlue = document.querySelector('.laos-blue');
-          const laosWhite = document.querySelector('.laos-white');
+      const laos = document.querySelector('.laos');
+      const laosRed = document.querySelector('.laos-red');
+      const laosBlue = document.querySelector('.laos-blue');
+      const laosWhite = document.querySelector('.laos-white');
 
   // Latvia
 
-          const latvia = document.querySelector('.latvia');
-          const latviaRed = document.querySelector('.latvia-red');
-          const latviaWhite = document.querySelector('.latvia-white');
+      const latvia = document.querySelector('.latvia');
+      const latviaRed = document.querySelector('.latvia-red');
+      const latviaWhite = document.querySelector('.latvia-white');
 
   // Madagascar
 
-          const madagascar = document.querySelector('.madagascar');
-          const madagascarRed = document.querySelector('.madagascar-red');
-          const madagascarGreen = document.querySelector('.madagascar-green');
-          const madagascarWhite = document.querySelector('.madagascar-white');
+      const madagascar = document.querySelector('.madagascar');
+      const madagascarRed = document.querySelector('.madagascar-red');
+      const madagascarGreen = document.querySelector('.madagascar-green');
+      const madagascarWhite = document.querySelector('.madagascar-white');
 
   // Mauritius
 
-          const mauritius = document.querySelector('.mauritius');
-          const mauritiusRed = document.querySelector('.mauritius-red');
-          const mauritiusGreen = document.querySelector('.mauritius-green');
-          const mauritiusYellow = document.querySelector('.mauritius-yellow');
-          const mauritiusBlue = document.querySelector('.mauritius-blue');
+      const mauritius = document.querySelector('.mauritius');
+      const mauritiusRed = document.querySelector('.mauritius-red');
+      const mauritiusGreen = document.querySelector('.mauritius-green');
+      const mauritiusYellow = document.querySelector('.mauritius-yellow');
+      const mauritiusBlue = document.querySelector('.mauritius-blue');
 
 
   // Niger
 
-          const niger = document.querySelector('.niger');
-          const nigerOrange = document.querySelector('.niger-orange');
-          const nigerWhite = document.querySelector('.niger-white');
-          const nigerGreen = document.querySelector('.niger-green');
-          const nigerCircle = document.querySelector('.niger-circle');
+      const niger = document.querySelector('.niger');
+      const nigerOrange = document.querySelector('.niger-orange');
+      const nigerWhite = document.querySelector('.niger-white');
+      const nigerGreen = document.querySelector('.niger-green');
+      const nigerCircle = document.querySelector('.niger-circle');
 
   // Botswana
 
-          const botswana = document.querySelector('.botswana');
-          const botswanaBlue = document.querySelector('.botswana-blue');
-          const botswanaWhite = document.querySelector('.botswana-white');
-          const botswanaBlack = document.querySelector('.botswana-black');
+      const botswana = document.querySelector('.botswana');
+      const botswanaBlue = document.querySelector('.botswana-blue');
+      const botswanaWhite = document.querySelector('.botswana-white');
+      const botswanaBlack = document.querySelector('.botswana-black');
 
   // Chile
 
-          const chile = document.querySelector('.chile');
-          const chileBlue = document.querySelector('.chile-blue');
-          const chileWhite = document.querySelector('.chile-white');
-          const chileRed = document.querySelector('.chile-red');
-          const chileStar = document.querySelector('.chile-star');
+      const chile = document.querySelector('.chile');
+      const chileBlue = document.querySelector('.chile-blue');
+      const chileWhite = document.querySelector('.chile-white');
+      const chileRed = document.querySelector('.chile-red');
+      const chileStar = document.querySelector('.chile-star');
 
 
   // China
 
-          const china = document.querySelector('.china');
-          const chinaRed = document.querySelector('.china-red');
-          const chinaStar1 = document.querySelector('.china-star1');
-          const chinaStar2 = document.querySelector('.china-star2');
-          const chinaStar3 = document.querySelector('.china-star3');
-          const chinaStar4 = document.querySelector('.china-star4');
-          const chinaStar5 = document.querySelector('.china-star5');
+      const china = document.querySelector('.china');
+      const chinaRed = document.querySelector('.china-red');
+      const chinaStar1 = document.querySelector('.china-star1');
+      const chinaStar2 = document.querySelector('.china-star2');
+      const chinaStar3 = document.querySelector('.china-star3');
+      const chinaStar4 = document.querySelector('.china-star4');
+      const chinaStar5 = document.querySelector('.china-star5');
 
   // Denmark
 
-          const denmark = document.querySelector('.denmark');
-          const denmarkRed = document.querySelector('.denmark-red');
-          const denmarkWhite1 = document.querySelector('.denmark-white1');
-          const denmarkWhite2 = document.querySelector('.denmark-white2');
+      const denmark = document.querySelector('.denmark');
+      const denmarkRed = document.querySelector('.denmark-red');
+      const denmarkWhite1 = document.querySelector('.denmark-white1');
+      const denmarkWhite2 = document.querySelector('.denmark-white2');
 
   // Finland
 
-          const finland = document.querySelector('.finland');
-          const finlandWhite = document.querySelector('.finland-white');
-          const finlandBlue1 = document.querySelector('.finland-blue1');
-          const finlandBlue2 = document.querySelector('.finland-blue2');
+      const finland = document.querySelector('.finland');
+      const finlandWhite = document.querySelector('.finland-white');
+      const finlandBlue1 = document.querySelector('.finland-blue1');
+      const finlandBlue2 = document.querySelector('.finland-blue2');
 
   // Iceland
 
-          const iceland = document.querySelector('.iceland');
-          const icelandBlue = document.querySelector('.iceland-blue');
-          const icelandWhite1 = document.querySelector('.iceland-white1');
-          const icelandWhite2 = document.querySelector('.iceland-white2');
-          const icelandRed1 = document.querySelector('.iceland-red1');
-          const icelandRed2 = document.querySelector('.iceland-red2');
+      const iceland = document.querySelector('.iceland');
+      const icelandBlue = document.querySelector('.iceland-blue');
+      const icelandWhite1 = document.querySelector('.iceland-white1');
+      const icelandWhite2 = document.querySelector('.iceland-white2');
+      const icelandRed1 = document.querySelector('.iceland-red1');
+      const icelandRed2 = document.querySelector('.iceland-red2');
 
   // Micronesia
 
-          const micronesia = document.querySelector('.micronesia');
-          const micronesiaBlue = document.querySelector('.micronesia-blue');
-          const micronesiaStar1 = document.querySelector('.micronesia-star1');
-          const micronesiaStar2 = document.querySelector('.micronesia-star2');
-          const micronesiaStar3 = document.querySelector('.micronesia-star3');
-          const micronesiaStar4 = document.querySelector('.micronesia-star4');
+      const micronesia = document.querySelector('.micronesia');
+      const micronesiaBlue = document.querySelector('.micronesia-blue');
+      const micronesiaStar1 = document.querySelector('.micronesia-star1');
+      const micronesiaStar2 = document.querySelector('.micronesia-star2');
+      const micronesiaStar3 = document.querySelector('.micronesia-star3');
+      const micronesiaStar4 = document.querySelector('.micronesia-star4');
 
  // Morocco
 
-          const morocco = document.querySelector('.morocco');
-          const moroccoRed = document.querySelector('.morocco-red');
-          const moroccoStar = document.querySelector('.morocco-star');
+      const morocco = document.querySelector('.morocco');
+      const moroccoRed = document.querySelector('.morocco-red');
+      const moroccoStar = document.querySelector('.morocco-star');
 
 // Senegal
 
-          const senegal = document.querySelector('.senegal');
-          const senegalGreen = document.querySelector('.senegal-green');
-          const senegalYellow = document.querySelector('.senegal-yellow');
-          const senegalRed = document.querySelector('.senegal-red');
-          const senegalStar = document.querySelector('.senegal-star');
+      const senegal = document.querySelector('.senegal');
+      const senegalGreen = document.querySelector('.senegal-green');
+      const senegalYellow = document.querySelector('.senegal-yellow');
+      const senegalRed = document.querySelector('.senegal-red');
+      const senegalStar = document.querySelector('.senegal-star');
+
+// Sweden
+
+      const sweden = document.querySelector('.sweden');
+      const swedenBlue = document.querySelector('.sweden-blue');
+      const swedenYellow1 = document.querySelector('.sweden-yellow1');
+      const swedenYellow2 = document.querySelector('.sweden-yellow2');
 
 //
 //
@@ -798,6 +805,17 @@ if (selectCountry.value === '40') {
   senegalStar.style.color = "rgb(0,150,57)";
 }
 
+// if sweden is selected - opacity
+
+if (selectCountry.value === '41') {
+  counter +=1;
+  sweden.style.opacity = "1";
+  sweden.style.zIndex = counter;
+  swedenBlue.style.backgroundColor = "rgb(0, 75, 135)";
+  swedenYellow1.style.backgroundColor = "rgb(255, 209, 0)";
+  swedenYellow2.style.backgroundColor = "rgb(255, 209, 0)";
+}
+
 })
 
 
@@ -1176,6 +1194,15 @@ if (selectCountry.value === '40') {
   senegalYellow.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
   senegalRed.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
   senegalStar.style.color = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+}
+
+// if Sweden is selected - change color
+
+if (selectCountry.value === '41') {
+
+  swedenBlue.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+  swedenYellow1.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+  swedenYellow2.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
 }
 
 
