@@ -316,6 +316,13 @@ function randomNum() {
       const swedenYellow1 = document.querySelector('.sweden-yellow1');
       const swedenYellow2 = document.querySelector('.sweden-yellow2');
 
+// Ghana
+
+      const ghana = document.querySelector('.ghana');
+      const ghanaRed = document.querySelector('.ghana-red');
+      const ghanaYellow = document.querySelector('.ghana-yellow');
+      const ghanaGreen = document.querySelector('.ghana-green');
+      const ghanaStar = document.querySelector('.ghana-star');
 //
 //
 // counter for every time a country is selected
@@ -816,6 +823,18 @@ if (selectCountry.value === '41') {
   swedenYellow2.style.backgroundColor = "rgb(255, 209, 0)";
 }
 
+// if ghana is selected - opacity
+
+if (selectCountry.value === '42') {
+  counter +=1;
+  ghana.style.opacity = "1";
+  ghana.style.zIndex = counter;
+  ghanaRed.style.backgroundColor = "rgb(239, 51, 64)";
+  ghanaYellow.style.backgroundColor = "rgb(255, 209, 0)";
+  ghanaGreen.style.backgroundColor = "rgb(0, 150, 57)";
+  ghanaStar.style.color = "rgb(0, 0, 0)";
+}
+
 })
 
 
@@ -1203,6 +1222,16 @@ if (selectCountry.value === '41') {
   swedenBlue.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
   swedenYellow1.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
   swedenYellow2.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+}
+
+// if Ghana is selected - change color
+
+if (selectCountry.value === '42') {
+
+  ghanaRed.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+  ghanaYellow.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+  ghanaGreen.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+  ghanaStar.style.color = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
 }
 
 
