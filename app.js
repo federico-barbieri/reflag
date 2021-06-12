@@ -323,6 +323,14 @@ function randomNum() {
       const ghanaYellow = document.querySelector('.ghana-yellow');
       const ghanaGreen = document.querySelector('.ghana-green');
       const ghanaStar = document.querySelector('.ghana-star');
+
+// Guinea-Bissau
+
+      const guineaBissau = document.querySelector('.guinea-bissau');
+      const guineaBissauRed = document.querySelector('.guinea-bissau-red');
+      const guineaBissauYellow = document.querySelector('.guinea-bissau-yellow');
+      const guineaBissauGreen = document.querySelector('.guinea-bissau-green');
+      const guineaBissauStar = document.querySelector('.guinea-bissau-star');
 //
 //
 // counter for every time a country is selected
@@ -835,6 +843,18 @@ if (selectCountry.value === '42') {
   ghanaStar.style.color = "rgb(0, 0, 0)";
 }
 
+// if guinea-bissau is selected - opacity
+
+if (selectCountry.value === '43') {
+  counter +=1;
+  guineaBissau.style.opacity = "1";
+  guineaBissau.style.zIndex = counter;
+  guineaBissauRed.style.backgroundColor = "rgb(239, 51, 64)";
+  guineaBissauYellow.style.backgroundColor = "rgb(255, 209, 0)";
+  guineaBissauGreen.style.backgroundColor = "rgb(0, 150, 57)";
+  guineaBissauStar.style.color = "rgb(0, 0, 0)";
+}
+
 })
 
 
@@ -1232,6 +1252,16 @@ if (selectCountry.value === '42') {
   ghanaYellow.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
   ghanaGreen.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
   ghanaStar.style.color = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+}
+
+// if Guinea-Bissau is selected - change color
+
+if (selectCountry.value === '43') {
+
+  guineaBissauRed.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+  guineaBissauYellow.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+  guineaBissauGreen.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+  guineaBissauStar.style.color = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
 }
 
 
