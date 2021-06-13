@@ -331,6 +331,14 @@ function randomNum() {
       const guineaBissauYellow = document.querySelector('.guinea-bissau-yellow');
       const guineaBissauGreen = document.querySelector('.guinea-bissau-green');
       const guineaBissauStar = document.querySelector('.guinea-bissau-star');
+
+// Guinea
+
+      const guinea = document.querySelector('.guinea');
+      const guineaRed = document.querySelector('.guinea-red');
+      const guineaYellow = document.querySelector('.guinea-yellow');
+      const guineaGreen = document.querySelector('.guinea-green');
+
 //
 //
 // counter for every time a country is selected
@@ -855,6 +863,17 @@ if (selectCountry.value === '43') {
   guineaBissauStar.style.color = "rgb(0, 0, 0)";
 }
 
+// if guinea is selected - opacity
+
+if (selectCountry.value === '44') {
+  counter +=1;
+  guinea.style.opacity = "1";
+  guinea.style.zIndex = counter;
+  guineaRed.style.backgroundColor = "rgb(206, 17, 38)";
+  guineaYellow.style.backgroundColor = "rgb(252, 209, 22)";
+  guineaGreen.style.backgroundColor = "rgb(0, 148, 96)";
+}
+
 })
 
 
@@ -1262,6 +1281,15 @@ if (selectCountry.value === '43') {
   guineaBissauYellow.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
   guineaBissauGreen.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
   guineaBissauStar.style.color = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+}
+
+// if Guinea is selected - change color
+
+if (selectCountry.value === '44') {
+
+  guineaRed.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+  guineaYellow.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+  guineaGreen.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
 }
 
 
