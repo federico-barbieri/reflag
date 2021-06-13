@@ -1626,3 +1626,35 @@ transform: translateY(-20px);
   padding: 0px 0px 62px 23px;
   transform: scale(7);
 }
+
+/* GUINEA */
+
+.guinea {
+
+  width: 600px;
+  height: 350px;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: row;
+  opacity: 0;
+  position: absolute;
+  transform: translateY(200px);
+}
+
+.guinea-red {
+  width: 200px;
+  height: 350px;
+  background-color: rgb(206, 17, 38);
+}
+
+.guinea-yellow {
+  width: 200px;
+  height: 350px;
+  background-color: rgb(252, 209, 22);
+}
+
+.guinea-green {
+  width: 200px;
+  height: 350px;
+  background-color: rgb(0, 148, 96);
+}
