@@ -339,6 +339,12 @@ function randomNum() {
       const guineaYellow = document.querySelector('.guinea-yellow');
       const guineaGreen = document.querySelector('.guinea-green');
 
+// Maldives
+
+      const maldives = document.querySelector('.maldives');
+      const maldivesRed = document.querySelector('.maldives-red');
+      const maldivesGreen = document.querySelector('.maldives-green');
+      const maldivesMoon = document.querySelector('.maldives-moon');
 //
 //
 // counter for every time a country is selected
@@ -874,6 +880,17 @@ if (selectCountry.value === '44') {
   guineaGreen.style.backgroundColor = "rgb(0, 148, 96)";
 }
 
+// if maldives is selected - opacity
+
+if (selectCountry.value === '45') {
+  counter +=1;
+  maldives.style.opacity = "1";
+  maldives.style.zIndex = counter;
+  maldivesRed.style.backgroundColor = "rgb(200,16,46)";
+  maldivesGreen.style.backgroundColor = "rgb(0,132,61)";
+  maldivesMoon.style.color = "rgb(255, 255, 255)";
+}
+
 })
 
 
@@ -1290,6 +1307,15 @@ if (selectCountry.value === '44') {
   guineaRed.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
   guineaYellow.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
   guineaGreen.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+}
+
+// if Maldives is selected - change color
+
+if (selectCountry.value === '45') {
+
+  maldivesRed.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+  maldivesGreen.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+  maldivesMoon.style.color = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
 }
 
 
