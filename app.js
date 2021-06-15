@@ -345,6 +345,13 @@ function randomNum() {
       const maldivesRed = document.querySelector('.maldives-red');
       const maldivesGreen = document.querySelector('.maldives-green');
       const maldivesMoon = document.querySelector('.maldives-moon');
+
+// Palau
+
+      const palau = document.querySelector('.palau');
+      const palauBlue = document.querySelector('.palau-blue');
+      const palauYellow = document.querySelector('.palau-yellow');
+
 //
 //
 // counter for every time a country is selected
@@ -891,6 +898,16 @@ if (selectCountry.value === '45') {
   maldivesMoon.style.color = "rgb(255, 255, 255)";
 }
 
+// if palau is selected - opacity
+
+if (selectCountry.value === '46') {
+  counter +=1;
+  palau.style.opacity = "1";
+  palau.style.zIndex = counter;
+  palauBlue.style.backgroundColor = "rgb(0,133,202)";
+  palauYellow.style.backgroundColor = "rgb(255,209,0)";
+}
+
 })
 
 
@@ -1316,6 +1333,15 @@ if (selectCountry.value === '45') {
   maldivesRed.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
   maldivesGreen.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
   maldivesMoon.style.color = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+}
+
+// if Palau is selected - change color
+
+if (selectCountry.value === '46') {
+
+  palauBlue.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+  palauYellow.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+
 }
 
 
