@@ -352,6 +352,13 @@ function randomNum() {
       const palauBlue = document.querySelector('.palau-blue');
       const palauYellow = document.querySelector('.palau-yellow');
 
+// Somalia
+
+      const somalia = document.querySelector('.somalia');
+      const somaliaBlue = document.querySelector('.somalia-blue');
+      const somaliaStar = document.querySelector('.somalia-star');
+
+
 //
 //
 // counter for every time a country is selected
@@ -908,6 +915,16 @@ if (selectCountry.value === '46') {
   palauYellow.style.backgroundColor = "rgb(255,209,0)";
 }
 
+// if somalia is selected - opacity
+
+if (selectCountry.value === '47') {
+  counter +=1;
+  somalia.style.opacity = "1";
+  somalia.style.zIndex = counter;
+  somaliaBlue.style.backgroundColor = "rgb(171, 202, 233)";
+  somaliaStar.style.color = "rgb(255, 255, 255)";
+}
+
 })
 
 
@@ -1344,5 +1361,12 @@ if (selectCountry.value === '46') {
 
 }
 
+// if Somalia is selected - change color
+
+if (selectCountry.value === '47') {
+
+  somaliaBlue.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+  somaliaStar.style.color = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+}
 
 })
