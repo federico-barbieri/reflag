@@ -358,6 +358,11 @@ function randomNum() {
       const somaliaBlue = document.querySelector('.somalia-blue');
       const somaliaStar = document.querySelector('.somalia-star');
 
+// Vietnam
+
+      const vietnam = document.querySelector('.vietnam');
+      const vietnamRed = document.querySelector('.vietnam-red');
+      const vietnamStar = document.querySelector('.vietnam-star');
 
 //
 //
@@ -925,6 +930,17 @@ if (selectCountry.value === '47') {
   somaliaStar.style.color = "rgb(255, 255, 255)";
 }
 
+// if vietnam is selected - opacity
+
+if (selectCountry.value === '48') {
+  counter +=1;
+  vietnam.style.opacity = "1";
+  vietnam.style.zIndex = counter;
+  vietnamRed.style.backgroundColor = "rgb(200,16,46)";
+  vietnamStar.style.color = "rgb(255,205,0)";
+}
+
+
 })
 
 
@@ -1367,6 +1383,14 @@ if (selectCountry.value === '47') {
 
   somaliaBlue.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
   somaliaStar.style.color = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+}
+
+// if Vietnam is selected - change color
+
+if (selectCountry.value === '48') {
+
+  vietnamRed.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+  vietnamStar.style.color = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
 }
 
 })
