@@ -1782,3 +1782,42 @@ transform: translateY(-20px);
   padding-left: 58px;
   transform: scale(9);
 }
+
+/* TURKEY */
+
+.turkey {
+
+  width: 600px;
+  height: 350px;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: row;
+  opacity: 0;
+  position: absolute;
+  transform: translateY(200px);
+}
+
+.turkey-red {
+  width: 600px;
+  height: 350px;
+  background-color: rgb(200, 16, 46);
+}
+
+.turkey-moon {
+  color: rgb(255, 255, 255);
+  position: absolute;
+  z-index: 10;
+  padding-top: 32px;
+  padding-left: 40px;
+  transform: scale(9);
+}
+
+.turkey-star {
+  color: rgb(255, 255, 255);
+  position: absolute;
+  z-index: 10;
+  padding-top: 50px;
+  padding-left: 100px;
+  transform: scale(5);
+
+}
