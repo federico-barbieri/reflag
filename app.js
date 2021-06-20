@@ -364,6 +364,13 @@ function randomNum() {
       const vietnamRed = document.querySelector('.vietnam-red');
       const vietnamStar = document.querySelector('.vietnam-star');
 
+// Turkey
+
+      const turkey = document.querySelector('.turkey');
+      const turkeyRed = document.querySelector('.turkey-red');
+      const turkeyStar = document.querySelector('.turkey-star');
+      const turkeyMoon = document.querySelector('.turkey-moon');
+
 //
 //
 // counter for every time a country is selected
@@ -940,6 +947,17 @@ if (selectCountry.value === '48') {
   vietnamStar.style.color = "rgb(255,205,0)";
 }
 
+// if turkey is selected - opacity
+
+if (selectCountry.value === '49') {
+  counter +=1;
+  turkey.style.opacity = "1";
+  turkey.style.zIndex = counter;
+  turkeyRed.style.backgroundColor = "rgb(200,16,46)";
+  turkeyStar.style.color = "rgb(255,255,255)";
+  turkeyMoon.style.color = "rgb(255,255, 255)";
+}
+
 
 })
 
@@ -1391,6 +1409,15 @@ if (selectCountry.value === '48') {
 
   vietnamRed.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
   vietnamStar.style.color = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+}
+
+// if Turkey is selected - change color
+
+if (selectCountry.value === '49') {
+
+  turkeyRed.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+  turkeyStar.style.color = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+  turkeyMoon.style.color = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
 }
 
 })
