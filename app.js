@@ -371,6 +371,14 @@ function randomNum() {
       const turkeyStar = document.querySelector('.turkey-star');
       const turkeyMoon = document.querySelector('.turkey-moon');
 
+// Cameroon
+
+      const cameroon = document.querySelector('.cameroon');
+      const cameroonRed = document.querySelector('.cameroon-red');
+      const cameroonYellow = document.querySelector('.cameroon-yellow');
+      const cameroonGreen = document.querySelector('.cameroon-green');
+      const cameroonStar = document.querySelector('.cameroon-star');
+
 //
 //
 // counter for every time a country is selected
@@ -958,6 +966,18 @@ if (selectCountry.value === '49') {
   turkeyMoon.style.color = "rgb(255,255, 255)";
 }
 
+// if cameroon is selected - opacity
+
+if (selectCountry.value === '50') {
+  counter +=1;
+  cameroon.style.opacity = "1";
+  cameroon.style.zIndex = counter;
+  cameroonRed.style.backgroundColor = "rgb(239, 51, 64)";
+  cameroonYellow.style.backgroundColor = "rgb(255, 209, 0)";
+  cameroonGreen.style.backgroundColor = "rgb(0, 150, 57)";
+  cameroonStar.style.color = "rgb(255, 209, 0)";
+}
+
 
 })
 
@@ -1418,6 +1438,16 @@ if (selectCountry.value === '49') {
   turkeyRed.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
   turkeyStar.style.color = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
   turkeyMoon.style.color = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+}
+
+// if Cameroon is selected - change color
+
+if (selectCountry.value === '50') {
+
+  cameroonRed.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+  cameroonYellow.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+  cameroonGreen.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+  cameroonStar.style.color = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
 }
 
 })
