@@ -379,6 +379,13 @@ function randomNum() {
       const cameroonGreen = document.querySelector('.cameroon-green');
       const cameroonStar = document.querySelector('.cameroon-star');
 
+// Burkina
+
+      const burkina = document.querySelector('.burkina');
+      const burkinaRed = document.querySelector('.burkina-red');
+      const burkinaGreen = document.querySelector('.burkina-green');
+      const burkinaStar = document.querySelector('.burkina-star');
+
 //
 //
 // counter for every time a country is selected
@@ -978,6 +985,17 @@ if (selectCountry.value === '50') {
   cameroonStar.style.color = "rgb(255, 209, 0)";
 }
 
+// if burkina is selected - opacity
+
+if (selectCountry.value === '51') {
+  counter +=1;
+  burkina.style.opacity = "1";
+  burkina.style.zIndex = counter;
+  burkinaRed.style.backgroundColor = "rgb(239, 51, 64)";
+  burkinaGreen.style.backgroundColor = "rgb(0, 150, 57)";
+  burkinaStar.style.color = "rgb(253, 218, 36)";
+}
+
 
 })
 
@@ -1448,6 +1466,15 @@ if (selectCountry.value === '50') {
   cameroonYellow.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
   cameroonGreen.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
   cameroonStar.style.color = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+}
+
+// if Cameroon is selected - change color
+
+if (selectCountry.value === '51') {
+
+  burkinaRed.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+  burkinaGreen.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+  burkinaStar.style.color = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
 }
 
 })
