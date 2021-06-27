@@ -386,6 +386,18 @@ function randomNum() {
       const burkinaGreen = document.querySelector('.burkina-green');
       const burkinaStar = document.querySelector('.burkina-star');
 
+// Honduras
+
+      const honduras = document.querySelector('.honduras');
+      const hondurasBlue1 = document.querySelector('.honduras-blue1');
+      const hondurasWhite = document.querySelector('.honduras-white');
+      const hondurasBlue2 = document.querySelector('.honduras-blue2');
+      const hondurasStar1 = document.querySelector('.honduras-star1');
+      const hondurasStar2 = document.querySelector('.honduras-star2');
+      const hondurasStar3 = document.querySelector('.honduras-star3');
+      const hondurasStar4 = document.querySelector('.honduras-star4');
+      const hondurasStar5 = document.querySelector('.honduras-star5');
+
 //
 //
 // counter for every time a country is selected
@@ -996,6 +1008,22 @@ if (selectCountry.value === '51') {
   burkinaStar.style.color = "rgb(253, 218, 36)";
 }
 
+// if honduras is selected - opacity
+
+if (selectCountry.value === '52') {
+  counter +=1;
+  honduras.style.opacity = "1";
+  honduras.style.zIndex = counter;
+  hondurasBlue1.style.backgroundColor = "rgb(0, 114, 206)";
+  hondurasWhite.style.backgroundColor = "rgb(255, 255, 255)";
+  hondurasBlue2.style.backgroundColor = "rgb(0, 114, 206)";
+  hondurasStar1.style.color = "rgb(0, 114, 206)";
+  hondurasStar2.style.color = "rgb(0, 114, 206)";
+  hondurasStar3.style.color = "rgb(0, 114, 206)";
+  hondurasStar4.style.color = "rgb(0, 114, 206)";
+  hondurasStar5.style.color = "rgb(0, 114, 206)";
+}
+
 
 })
 
@@ -1468,13 +1496,27 @@ if (selectCountry.value === '50') {
   cameroonStar.style.color = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
 }
 
-// if Cameroon is selected - change color
+// if Burkina Faso is selected - change color
 
 if (selectCountry.value === '51') {
 
   burkinaRed.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
   burkinaGreen.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
   burkinaStar.style.color = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+}
+
+// if Honduras is selected - change color
+
+if (selectCountry.value === '52') {
+
+  hondurasBlue1.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+  hondurasWhite.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+  hondurasBlue2.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+  hondurasStar1.style.color = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+  hondurasStar2.style.color = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+  hondurasStar3.style.color = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+  hondurasStar4.style.color = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+  hondurasStar5.style.color = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
 }
 
 })
