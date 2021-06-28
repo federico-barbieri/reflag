@@ -398,6 +398,14 @@ function randomNum() {
       const hondurasStar4 = document.querySelector('.honduras-star4');
       const hondurasStar5 = document.querySelector('.honduras-star5');
 
+// Mauritania
+
+      const mauritania = document.querySelector('.mauritania');
+      const mauritaniaRed = document.querySelector('.mauritania-red');
+      const mauritaniaGreen = document.querySelector('.mauritania-green');
+      const mauritaniaStar = document.querySelector('.mauritania-star');
+      const mauritaniaMoon = document.querySelector('.mauritania-moon');
+
 //
 //
 // counter for every time a country is selected
@@ -1024,6 +1032,18 @@ if (selectCountry.value === '52') {
   hondurasStar5.style.color = "rgb(0, 114, 206)";
 }
 
+// if mauritania is selected - opacity
+
+if (selectCountry.value === '53') {
+  counter +=1;
+  mauritania.style.opacity = "1";
+  mauritania.style.zIndex = counter;
+  mauritaniaRed.style.backgroundColor = "rgb(208, 28, 31)";
+  mauritaniaGreen.style.backgroundColor = "rgb(0, 169, 92)";
+  mauritaniaStar.style.color = "rgb(255, 215, 0)";
+  mauritaniaMoon.style.color = "rgb(255, 215, 0)";
+}
+
 
 })
 
@@ -1517,6 +1537,16 @@ if (selectCountry.value === '52') {
   hondurasStar3.style.color = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
   hondurasStar4.style.color = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
   hondurasStar5.style.color = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+}
+
+// if Mauritania is selected - change color
+
+if (selectCountry.value === '53') {
+
+  mauritaniaRed.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+  mauritaniaGreen.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+  mauritaniaStar.style.color = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+  mauritaniaMoon.style.color = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
 }
 
 })
