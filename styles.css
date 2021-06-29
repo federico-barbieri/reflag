@@ -2004,5 +2004,43 @@ transform: translateY(-20px);
   color: rgb(255, 215, 0);
   position: absolute;
   transform: translate(290px, 180px) rotate(-70deg) scale(9);
+}
 
+/* MYANMAR */
+
+.myanmar {
+
+  width: 600px;
+  height: 350px;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  position: absolute;
+  transform: translateY(200px);
+}
+
+.myanmar-yellow {
+  width: 600px;
+  height: 200px;
+  background-color: rgb(255, 205, 0);
+}
+
+.myanmar-green {
+  width: 600px;
+  height: 200px;
+  background-color: rgb(67, 176, 42);
+}
+
+.myanmar-red {
+  width: 600px;
+  height: 200px;
+  background-color: rgb(238, 39, 55);
+}
+
+.myanmar-star {
+  color: rgb(255, 255, 255);
+  position: absolute;
+  z-index: 10;
+  transform: translate(295px, 168px) scale(15);
 }
