@@ -414,6 +414,13 @@ function randomNum() {
       const myanmarRed = document.querySelector('.myanmar-red');
       const myanmarStar = document.querySelector('.myanmar-star');
 
+// Pakistan
+
+      const pakistan = document.querySelector('.pakistan');
+      const pakistanGreen = document.querySelector('.pakistan-green');
+      const pakistanWhite = document.querySelector('.pakistan-white');
+      const pakistanStar = document.querySelector('.pakistan-star');
+      const pakistanMoon = document.querySelector('.pakistan-moon');
 
 //
 //
@@ -1063,7 +1070,18 @@ if (selectCountry.value === '54') {
   myanmarGreen.style.backgroundColor = "rgb(67, 176, 42)";
   myanmarRed.style.backgroundColor = "rgb(238, 39, 55)";
   myanmarStar.style.color = "rgb(255, 255, 255)";
+}
 
+// if pakistan is selected - opacity
+
+if (selectCountry.value === '55') {
+  counter +=1;
+  pakistan.style.opacity = "1";
+  pakistan.style.zIndex = counter;
+  pakistanGreen.style.backgroundColor = "rgb(17, 87, 64)";
+  pakistanWhite.style.backgroundColor = "rgb(255, 255, 255)";
+  pakistanStar.style.color = "rgb(255, 255, 255)";
+  pakistanMoon.style.color = "rgb(255, 255, 255)";
 }
 
 
@@ -1579,7 +1597,16 @@ if (selectCountry.value === '54') {
   myanmarGreen.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
   myanmarRed.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
   myanmarStar.style.color = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+}
 
+// if Pakistan is selected - change color
+
+if (selectCountry.value === '55') {
+
+  pakistanGreen.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+  pakistanWhite.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+  pakistanStar.style.color = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+  pakistanMoon.style.color = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
 }
 
 })
