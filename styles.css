@@ -2042,5 +2042,47 @@ transform: translateY(-20px);
   color: rgb(255, 255, 255);
   position: absolute;
   z-index: 10;
-  transform: translate(295px, 168px) scale(15);
+  transform: translate(290px, 168px) scale(15);
+}
+
+/* PAKISTAN */
+
+.pakistan {
+
+  width: 600px;
+  height: 350px;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  position: absolute;
+  transform: translateY(200px);
+}
+
+.pakistan-green {
+  width: 600px;
+  height: 350px;
+  position: absolute;
+  background-color: rgb(17, 87, 64);
+}
+
+.pakistan-white {
+  width: 150px;
+  height: 350px;
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+}
+
+.pakistan-star {
+  color: rgb(255, 255, 255);
+  position: absolute;
+  z-index: 10;
+  position: absolute;
+  transform: translate(400px, 120px) scale(3);
+}
+
+.pakistan-moon {
+  color: rgb(255, 255, 255);
+  position: absolute;
+  transform: translate(290px, 180px) rotate(-30deg) scale(12);
 }
