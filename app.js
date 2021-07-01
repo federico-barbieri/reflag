@@ -422,6 +422,15 @@ function randomNum() {
       const pakistanStar = document.querySelector('.pakistan-star');
       const pakistanMoon = document.querySelector('.pakistan-moon');
 
+// Syria
+
+      const syria = document.querySelector('.syria');
+      const syriaRed = document.querySelector('.syria-red');
+      const syriaWhite = document.querySelector('.syria-white');
+      const syriaBlack = document.querySelector('.syria-black');
+      const syriaStar1 = document.querySelector('.syria-star1');
+      const syriaStar2 = document.querySelector('.syria-star2');
+
 //
 //
 // counter for every time a country is selected
@@ -1084,6 +1093,19 @@ if (selectCountry.value === '55') {
   pakistanMoon.style.color = "rgb(255, 255, 255)";
 }
 
+// if syria is selected - opacity
+
+if (selectCountry.value === '56') {
+  counter +=1;
+  syria.style.opacity = "1";
+  syria.style.zIndex = counter;
+  syriaRed.style.backgroundColor = "rgb(239, 51, 64)";
+  syriaWhite.style.backgroundColor = "rgb(255, 255, 255)";
+  syriaBlack.style.backgroundColor = "rgb(0, 0, 0)";
+  syriaStar1.style.color = "rgb(0, 150, 57)";
+  syriaStar2.style.color = "rgb(0, 150, 57)";
+}
+
 
 })
 
@@ -1607,6 +1629,17 @@ if (selectCountry.value === '55') {
   pakistanWhite.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
   pakistanStar.style.color = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
   pakistanMoon.style.color = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+}
+
+// if Syria is selected - change color
+
+if (selectCountry.value === '56') {
+
+  syriaRed.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+  syriaWhite.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+  syriaBlack.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+  syriaStar1.style.color = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+  syriaStar2.style.color = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
 }
 
 })
