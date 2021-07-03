@@ -431,6 +431,13 @@ function randomNum() {
       const syriaStar1 = document.querySelector('.syria-star1');
       const syriaStar2 = document.querySelector('.syria-star2');
 
+// Switzerland
+
+      const switzerland = document.querySelector('.switzerland');
+      const switzerlandRed = document.querySelector('.switzerland-red');
+      const switzerlandWhite1 = document.querySelector('.switzerland-white1');
+      const switzerlandWhite2 = document.querySelector('.switzerland-white2');
+
 //
 //
 // counter for every time a country is selected
@@ -1106,6 +1113,16 @@ if (selectCountry.value === '56') {
   syriaStar2.style.color = "rgb(0, 150, 57)";
 }
 
+// if switzerland is selected - opacity
+
+if (selectCountry.value === '57') {
+  counter +=1;
+  switzerland.style.opacity = "1";
+  switzerland.style.zIndex = counter;
+  switzerlandRed.style.backgroundColor = "rgb(218, 41, 28)";
+  switzerlandWhite1.style.backgroundColor = "rgb(255, 255, 255)";
+  switzerlandWhite2.style.backgroundColor = "rgb(255, 255, 255)";
+}
 
 })
 
@@ -1640,6 +1657,15 @@ if (selectCountry.value === '56') {
   syriaBlack.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
   syriaStar1.style.color = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
   syriaStar2.style.color = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+}
+
+// if Switzerland is selected - change color
+
+if (selectCountry.value === '57') {
+
+  switzerlandRed.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+  switzerlandWhite1.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+  switzerlandWhite2.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
 }
 
 })
