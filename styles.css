@@ -2139,3 +2139,40 @@ transform: translateY(-20px);
   position: absolute;
   transform: translate(365px, 165px) scale(3);
 }
+
+/* SWITZERLAND */
+
+.switzerland {
+
+  width: 600px;
+  height: 350px;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  position: absolute;
+  transform: translateY(200px);
+}
+
+.switzerland-red {
+  width: 600px;
+  height: 350px;
+  position: absolute;
+  background-color: rgb(218, 41, 28);
+}
+
+.switzerland-white1 {
+  width: 250px;
+  height: 60px;
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  transform: translate(170px, 150px);
+}
+
+.switzerland-white2 {
+  width: 250px;
+  height: 60px;
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  transform: translate(170px, 150px) rotate(-90deg);
+}
