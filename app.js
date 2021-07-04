@@ -15,6 +15,10 @@ function randomNum() {
   return Math.floor((Math.random() * 255) + 1);
 }
 
+// counter for every time a country is selected
+
+var counter = 0;
+
 
 // France
 
@@ -438,11 +442,17 @@ function randomNum() {
       const switzerlandWhite1 = document.querySelector('.switzerland-white1');
       const switzerlandWhite2 = document.querySelector('.switzerland-white2');
 
-//
-//
-// counter for every time a country is selected
 
-var counter = 0;
+// Tonga
+
+      const tonga = document.querySelector('.tonga');
+      const tongaRed = document.querySelector('.tonga-red');
+      const tongaRed2 = document.querySelector('.tonga-red2');
+      const tongaRed3 = document.querySelector('.tonga-red3');
+      const tongaWhite = document.querySelector('.tonga-white');
+//
+//
+
 
 
 // SELECT COUNTRY EVENT LISTENER
@@ -1107,10 +1117,10 @@ if (selectCountry.value === '56') {
   syria.style.opacity = "1";
   syria.style.zIndex = counter;
   syriaRed.style.backgroundColor = "rgb(239, 51, 64)";
-  syriaWhite.style.backgroundColor = "rgb(255, 255, 255)";
   syriaBlack.style.backgroundColor = "rgb(0, 0, 0)";
   syriaStar1.style.color = "rgb(0, 150, 57)";
   syriaStar2.style.color = "rgb(0, 150, 57)";
+  syriaWhite.style.backgroundColor = "rgb(255, 255, 255)";
 }
 
 // if switzerland is selected - opacity
@@ -1122,6 +1132,18 @@ if (selectCountry.value === '57') {
   switzerlandRed.style.backgroundColor = "rgb(218, 41, 28)";
   switzerlandWhite1.style.backgroundColor = "rgb(255, 255, 255)";
   switzerlandWhite2.style.backgroundColor = "rgb(255, 255, 255)";
+}
+
+// if tonga is selected - opacity
+
+if (selectCountry.value === '58') {
+  counter +=1;
+  tonga.style.opacity = "1";
+  tonga.style.zIndex = counter;
+  tongaRed.style.backgroundColor = "rgb(239, 51, 64)";
+  tongaRed2.style.backgroundColor = "rgb(239, 51, 64)";
+  tongaRed3.style.backgroundColor = "rgb(239, 51, 64)";
+  tongaWhite.style.backgroundColor = "rgb(255, 255, 255)";
 }
 
 })
@@ -1666,6 +1688,16 @@ if (selectCountry.value === '57') {
   switzerlandRed.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
   switzerlandWhite1.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
   switzerlandWhite2.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+}
+
+// if Tonga is selected - change color
+
+if (selectCountry.value === '58') {
+
+  tongaRed.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+  tongaRed2.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+  tongaRed3.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+  tongaWhite.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
 }
 
 })
