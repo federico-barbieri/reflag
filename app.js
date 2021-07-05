@@ -450,6 +450,14 @@ var counter = 0;
       const tongaRed2 = document.querySelector('.tonga-red2');
       const tongaRed3 = document.querySelector('.tonga-red3');
       const tongaWhite = document.querySelector('.tonga-white');
+
+// Tunisia
+
+      const tunisia = document.querySelector('.tunisia');
+      const tunisiaRed = document.querySelector('.tunisia-red');
+      const tunisiaWhite = document.querySelector('.tunisia-white');
+      const tunisiaMoon = document.querySelector('.tunisia-moon');
+      const tunisiaStar = document.querySelector('.tunisia-star');
 //
 //
 
@@ -1117,10 +1125,11 @@ if (selectCountry.value === '56') {
   syria.style.opacity = "1";
   syria.style.zIndex = counter;
   syriaRed.style.backgroundColor = "rgb(239, 51, 64)";
+  syriaWhite.style.backgroundColor = "rgb(255, 255, 255)";
   syriaBlack.style.backgroundColor = "rgb(0, 0, 0)";
   syriaStar1.style.color = "rgb(0, 150, 57)";
   syriaStar2.style.color = "rgb(0, 150, 57)";
-  syriaWhite.style.backgroundColor = "rgb(255, 255, 255)";
+
 }
 
 // if switzerland is selected - opacity
@@ -1144,6 +1153,18 @@ if (selectCountry.value === '58') {
   tongaRed2.style.backgroundColor = "rgb(239, 51, 64)";
   tongaRed3.style.backgroundColor = "rgb(239, 51, 64)";
   tongaWhite.style.backgroundColor = "rgb(255, 255, 255)";
+}
+
+// if tunisia is selected - opacity
+
+if (selectCountry.value === '59') {
+  counter +=1;
+  tunisia.style.opacity = "1";
+  tunisia.style.zIndex = counter;
+  tunisiaRed.style.backgroundColor = "rgb(200, 16, 46)";
+  tunisiaWhite.style.backgroundColor = "rgb(255, 255, 255)";
+  tunisiaStar.style.color = "rgb(200, 16, 46)";
+  tunisiaMoon.style.color = "rgb(200, 16, 46)";
 }
 
 })
@@ -1698,6 +1719,16 @@ if (selectCountry.value === '58') {
   tongaRed2.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
   tongaRed3.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
   tongaWhite.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+}
+
+// if Tonga is selected - change color
+
+if (selectCountry.value === '59') {
+
+  tunisiaRed.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+  tunisiaWhite.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+  tunisiaStar.style.color = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+  tunisiaMoon.style.color = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
 }
 
 })
