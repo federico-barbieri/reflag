@@ -2105,15 +2105,16 @@ transform: translateY(-20px);
   width: 600px;
   height: 117px;
   position: absolute;
+  z-index: 1;
   background-color: rgb(239, 51, 64);
 }
 
 .syria-white {
   width: 600px;
-  height: 117px;
+  height: 350px;
   position: absolute;
   background-color: rgb(255, 255, 255);
-  transform: translateY(235px);
+
 }
 
 .syria-black {
@@ -2222,4 +2223,50 @@ transform: translateY(-20px);
   position: absolute;
   z-index: 5;
   background-color: rgb(255, 255, 255);
+}
+
+/* TUNISIA */
+
+.tunisia {
+
+  width: 600px;
+  height: 350px;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  position: absolute;
+  transform: translateY(200px);
+}
+
+.tunisia-red {
+  width: 600px;
+  height: 350px;
+  position: absolute;
+  background-color: rgb(200, 16, 46);
+}
+
+.tunisia-white {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 10;
+  background-color: rgb(255, 255, 255);
+  transform: translate(210px, 85px);
+}
+
+.tunisia-star {
+  color: rgb(200, 16, 46);
+  position: absolute;
+  z-index: 10;
+  position: absolute;
+  transform: translate(330px, 165px) scale(4) rotate(-20deg);
+}
+
+.tunisia-moon {
+  color: rgb(200, 16, 46);
+  position: absolute;
+  z-index: 10;
+  transform: translate(280px, 170px) rotate(20deg) scale(9);
 }
