@@ -458,6 +458,18 @@ var counter = 0;
       const tunisiaWhite = document.querySelector('.tunisia-white');
       const tunisiaMoon = document.querySelector('.tunisia-moon');
       const tunisiaStar = document.querySelector('.tunisia-star');
+
+// Uruguay
+
+      const uruguay = document.querySelector('.uruguay');
+      const uruguayBlue1 = document.querySelector('.uruguay-blue1');
+      const uruguayBlue2 = document.querySelector('.uruguay-blue2');
+      const uruguayBlue3 = document.querySelector('.uruguay-blue3');
+      const uruguayBlue4 = document.querySelector('.uruguay-blue4');
+      const uruguayWhite1 = document.querySelector('.uruguay-white1');
+      const uruguayWhiteSQ = document.querySelector('.uruguay-whiteSQ');
+      const uruguaySun = document.querySelector('.uruguay-sun');
+
 //
 //
 
@@ -1167,6 +1179,21 @@ if (selectCountry.value === '59') {
   tunisiaMoon.style.color = "rgb(200, 16, 46)";
 }
 
+// if Uruguay is selected - opacity
+
+if (selectCountry.value === '60') {
+  counter +=1;
+  uruguay.style.opacity = "1";
+  uruguay.style.zIndex = counter;
+  uruguayBlue1.style.backgroundColor = "rgb(0, 20, 137)";
+  uruguayBlue2.style.backgroundColor = "rgb(0, 20, 137)";
+  uruguayBlue3.style.backgroundColor = "rgb(0, 20, 137)";
+  uruguayBlue4.style.backgroundColor = "rgb(0, 20, 137)";
+  uruguayWhite1.style.backgroundColor = "rgb(255, 255, 255)";
+  uruguayWhiteSQ.style.backgroundColor = "rgb(255, 255, 255)";
+  uruguaySun.style.color = "rgb(255, 205, 0)";
+}
+
 })
 
 
@@ -1721,7 +1748,7 @@ if (selectCountry.value === '58') {
   tongaWhite.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
 }
 
-// if Tonga is selected - change color
+// if Tunisia is selected - change color
 
 if (selectCountry.value === '59') {
 
@@ -1729,6 +1756,19 @@ if (selectCountry.value === '59') {
   tunisiaWhite.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
   tunisiaStar.style.color = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
   tunisiaMoon.style.color = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+}
+
+// if Uruguay is selected - change color
+
+if (selectCountry.value === '60') {
+
+  uruguayWhite1.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+  uruguayWhiteSQ.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+  uruguayBlue1.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+  uruguayBlue2.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+  uruguayBlue3.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+  uruguayBlue4.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+  uruguaySun.style.color = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
 }
 
 })
