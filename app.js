@@ -470,6 +470,18 @@ var counter = 0;
       const uruguayWhiteSQ = document.querySelector('.uruguay-whiteSQ');
       const uruguaySun = document.querySelector('.uruguay-sun');
 
+// Singapore
+
+      const singapore = document.querySelector('.singapore');
+      const singaporeRed = document.querySelector('.singapore-red');
+      const singaporeWhite = document.querySelector('.singapore-white');
+      const singaporeMoon = document.querySelector('.singapore-moon');
+      const singaporeStar1 = document.querySelector('.singapore-star1');
+      const singaporeStar2 = document.querySelector('.singapore-star2');
+      const singaporeStar3 = document.querySelector('.singapore-star3');
+      const singaporeStar4 = document.querySelector('.singapore-star4');
+      const singaporeStar5 = document.querySelector('.singapore-star5');
+
 //
 //
 
@@ -1194,6 +1206,22 @@ if (selectCountry.value === '60') {
   uruguaySun.style.color = "rgb(255, 205, 0)";
 }
 
+// if singapore is selected - opacity
+
+if (selectCountry.value === '61') {
+  counter +=1;
+  singapore.style.opacity = "1";
+  singapore.style.zIndex = counter;
+  singaporeRed.style.backgroundColor = "rgb(239, 51, 64)";
+  singaporeWhite.style.backgroundColor = "rgb(255, 255, 255)";
+  singaporeStar1.style.color = "rgb(255, 255, 255)";
+  singaporeStar2.style.color = "rgb(255, 255, 255)";
+  singaporeStar3.style.color = "rgb(255, 255, 255)";
+  singaporeStar4.style.color = "rgb(255, 255, 255)";
+  singaporeStar5.style.color = "rgb(255, 255, 255)";
+  singaporeMoon.style.color = "rgb(255, 255, 255)";
+}
+
 })
 
 
@@ -1769,6 +1797,20 @@ if (selectCountry.value === '60') {
   uruguayBlue3.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
   uruguayBlue4.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
   uruguaySun.style.color = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+}
+
+// if Singapore is selected - change color
+
+if (selectCountry.value === '61') {
+
+  singaporeRed.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+  singaporeWhite.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+  singaporeStar1.style.color = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+  singaporeStar2.style.color = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+  singaporeStar3.style.color = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+  singaporeStar4.style.color = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+  singaporeStar5.style.color = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+  singaporeMoon.style.color = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
 }
 
 })
