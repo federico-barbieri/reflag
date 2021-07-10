@@ -482,6 +482,15 @@ var counter = 0;
       const singaporeStar4 = document.querySelector('.singapore-star4');
       const singaporeStar5 = document.querySelector('.singapore-star5');
 
+
+// Panama
+
+      const panama = document.querySelector('.panama');
+      const panamaRed = document.querySelector('.panama-red');
+      const panamaWhite = document.querySelector('.panama-white');
+      const panamaBlue = document.querySelector('.panama-blue');
+      const panamaStar1 = document.querySelector('.panama-star1');
+      const panamaStar2 = document.querySelector('.panama-star2');
 //
 //
 
@@ -1222,6 +1231,19 @@ if (selectCountry.value === '61') {
   singaporeMoon.style.color = "rgb(255, 255, 255)";
 }
 
+// if panama is selected - opacity
+
+if (selectCountry.value === '62') {
+  counter +=1;
+  panama.style.opacity = "1";
+  panama.style.zIndex = counter;
+  panamaRed.style.backgroundColor = "rgb(200, 16, 46)";
+  panamaWhite.style.backgroundColor = "rgb(255, 255, 255)";
+  panamaBlue.style.backgroundColor = "rgb(0, 94, 184)";
+  panamaStar1.style.color = "rgb(0, 94, 184)";
+  panamaStar2.style.color = "rgb(200, 16, 46)";
+}
+
 })
 
 
@@ -1811,6 +1833,17 @@ if (selectCountry.value === '61') {
   singaporeStar4.style.color = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
   singaporeStar5.style.color = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
   singaporeMoon.style.color = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+}
+
+// if Panama is selected - change color
+
+if (selectCountry.value === '62') {
+
+  panamaRed.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+  panamaWhite.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+  panamaBlue.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+  panamaStar1.style.color = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+  panamaStar2.style.color = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
 }
 
 })
