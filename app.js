@@ -491,6 +491,15 @@ var counter = 0;
       const panamaBlue = document.querySelector('.panama-blue');
       const panamaStar1 = document.querySelector('.panama-star1');
       const panamaStar2 = document.querySelector('.panama-star2');
+
+// Algeria
+
+      const algeria = document.querySelector('.algeria');
+      const algeriaGreen = document.querySelector('.algeria-green');
+      const algeriaWhite = document.querySelector('.algeria-white');
+      const algeriaStar = document.querySelector('.algeria-star');
+      const algeriaMoon = document.querySelector('.algeria-moon');
+
 //
 //
 
@@ -1244,6 +1253,18 @@ if (selectCountry.value === '62') {
   panamaStar2.style.color = "rgb(200, 16, 46)";
 }
 
+// if algeria is selected - opacity
+
+if (selectCountry.value === '63') {
+  counter +=1;
+  algeria.style.opacity = "1";
+  algeria.style.zIndex = counter;
+  algeriaGreen.style.backgroundColor = "rgb(0, 122, 51)";
+  algeriaWhite.style.backgroundColor = "rgb(255, 255, 255)";
+  algeriaStar.style.color = "rgb(200, 16, 46)";
+  algeriaMoon.style.color = "rgb(200, 16, 46)";
+}
+
 })
 
 
@@ -1844,6 +1865,16 @@ if (selectCountry.value === '62') {
   panamaBlue.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
   panamaStar1.style.color = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
   panamaStar2.style.color = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+}
+
+// if Algeria is selected - change color
+
+if (selectCountry.value === '63') {
+
+  algeriaGreen.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+  algeriaWhite.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+  algeriaStar.style.color = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+  algeriaMoon.style.color = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
 }
 
 })
