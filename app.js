@@ -542,6 +542,7 @@ if (selectCountry.value === '2') {
   belgiumBlack.style.backgroundColor = "rgb(0, 0, 0)";
   belgiumYellow.style.backgroundColor = "rgb(253, 218, 36)";
   belgiumRed.style.backgroundColor = "rgb(239, 51, 64)";
+  document.body.style.background = "url(img/belgium/belgium1.jpg)";
 
 
 }
@@ -555,6 +556,7 @@ if (selectCountry.value === '3') {
   coteOrange.style.backgroundColor = "rgb(247, 127, 0)";
   coteWhite.style.backgroundColor = "rgb(255, 255, 255)";
   coteGreen.style.backgroundColor = "rgb(0, 158, 96)";
+  document.body.style.background = "url(img/cote/cote1.jpg)";
 
 }
 
@@ -1290,6 +1292,7 @@ changeColorBtn.addEventListener('click', () => {
     franceRed.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
     document.body.style.background = `url(img/france/france${randomNumPic()}.jpg`;
     console.log(document.body.style.background);
+
   }
 
 
@@ -1300,6 +1303,8 @@ changeColorBtn.addEventListener('click', () => {
     belgiumBlack.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
     belgiumYellow.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
     belgiumRed.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+    document.body.style.background = `url(img/belgium/belgium${randomNumPic()}.jpg`;
+    console.log(document.body.style.background);
   }
 
   // if Côte d'Ivore is selected - change color
@@ -1309,6 +1314,7 @@ changeColorBtn.addEventListener('click', () => {
     coteOrange.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
     coteWhite.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
     coteGreen.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+    document.body.style.background = `url(img/cote/cote${randomNumPic()}.jpg`;
   }
 
   // if Italy is selected - change color
