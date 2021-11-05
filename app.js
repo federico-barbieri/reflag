@@ -569,7 +569,7 @@ if (selectCountry.value === '4') {
   italyGreen.style.backgroundColor = "rgb(0, 140, 69)";
   italyWhite.style.backgroundColor = "rgb(244, 245, 240)";
   italyRed.style.backgroundColor = "rgb(205, 33, 42)";
-
+  document.body.style.background = "url(img/italy/italy1.jpg)";
 }
 
 // if Ireland is selected - opacity
@@ -581,6 +581,8 @@ if (selectCountry.value === '5') {
   irelandGreen.style.backgroundColor = "rgb(22,155,98)";
   irelandWhite.style.backgroundColor = "rgb(255,255,255)";
   irelandOrange.style.backgroundColor = "rgb(255, 130, 0)";
+  document.body.style.background = "url(img/ireland/ireland1.jpg)";
+
 
 }
 
@@ -593,7 +595,7 @@ if (selectCountry.value === '6') {
   nigeriaGreen.style.backgroundColor = "rgb(0, 150, 57)";
   nigeriaWhite.style.backgroundColor = "rgb(255,255,255)";
   nigeriaGreen2.style.backgroundColor = "rgb(0, 150, 57)";
-
+  document.body.style.background = "url(img/nigeria/nigeria1.jpg)";
 }
 
 // if russia is selected - opacity
@@ -605,6 +607,7 @@ if (selectCountry.value === '7') {
   russiaWhite.style.backgroundColor = "rgb(255, 255, 255)";
   russiaBlue.style.backgroundColor = "rgb(0, 51, 160)";
   russiaRed.style.backgroundColor = "rgb(218, 41, 28)";
+  document.body.style.background = "url(img/russia/russia1.jpg)";
 
 }
 
@@ -1324,6 +1327,7 @@ changeColorBtn.addEventListener('click', () => {
     italyGreen.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
     italyWhite.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
     italyRed.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+    document.body.style.background = `url(img/italy/italy${randomNumPic()}.jpg`;
   }
 
   // if Ireland is selected - change color
@@ -1333,6 +1337,8 @@ changeColorBtn.addEventListener('click', () => {
     irelandGreen.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
     irelandWhite.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
     irelandOrange.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+    document.body.style.background = `url(img/ireland/ireland${randomNumPic()}.jpg`;
+    console.log(document.body.style.background);
   }
 
   // if Nigeria is selected - change color
@@ -1342,6 +1348,7 @@ changeColorBtn.addEventListener('click', () => {
     nigeriaGreen.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
     nigeriaWhite.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
     nigeriaGreen2.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+    document.body.style.background = `url(img/nigeria/nigeria${randomNumPic()}.jpg`;
   }
 
   // if Russia is selected - change color
@@ -1351,6 +1358,7 @@ changeColorBtn.addEventListener('click', () => {
     russiaWhite.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
     russiaBlue.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
     russiaRed.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+    document.body.style.background = `url(img/russia/russia${randomNumPic()}.jpg`;
   }
 
   // if Yemen is selected - change color
