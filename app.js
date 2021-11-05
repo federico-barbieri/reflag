@@ -1,4 +1,6 @@
 
+const body = document.querySelector('document.body');
+
 // select country
 
 const selectCountry = document.querySelector('.pick-country');
@@ -9,10 +11,16 @@ const selectCountry = document.querySelector('.pick-country');
 const changeColorBtn = document.querySelector('.change-color');
 
 
-// random number generator
+// random number generator for colors
 
 function randomNum() {
   return Math.floor((Math.random() * 255) + 1);
+}
+
+// random number generator for images
+
+function randomNumPic(){
+  return Math.floor((Math.random() * 10) + 1);
 }
 
 // counter for every time a country is selected
@@ -521,6 +529,7 @@ selectCountry.addEventListener('change', () => {
     franceBlue.style.backgroundColor = "rgb(0,85,164)";
     franceWhite.style.backgroundColor = "rgb(255, 255, 255)";
     franceRed.style.backgroundColor = "rgb(239,65,53)";
+    document.body.style.background = "url(img/france/france1.jpg)";
 
 }
 
@@ -1271,7 +1280,7 @@ if (selectCountry.value === '63') {
 // CHANGE COLOR EVENT LISTENER
 
 changeColorBtn.addEventListener('click', () => {
-console.log("nice");
+
 // if France is selected - change color
 
   if (selectCountry.value === '1') {
@@ -1279,7 +1288,10 @@ console.log("nice");
     franceBlue.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
     franceWhite.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
     franceRed.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+    document.body.style.background = `url(img/france/france${randomNumPic()}.jpg`;
+    console.log(document.body.style.background);
   }
+
 
   // if Belgium is selected - change color
 
