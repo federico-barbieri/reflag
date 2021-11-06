@@ -632,7 +632,7 @@ if (selectCountry.value === '9') {
   netherlandsRed.style.backgroundColor = "rgb(174, 28, 40)";
   netherlandsWhite.style.backgroundColor = "rgb(255, 255, 255)";
   netherlandsBlue.style.backgroundColor = "rgb(33, 70, 139)";
-
+  document.body.style.background = "url(img/netherlands/netherlands1.jpg)";
 }
 
 // if luxembourg is selected - opacity
@@ -1377,6 +1377,7 @@ changeColorBtn.addEventListener('click', () => {
     netherlandsRed.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
     netherlandsWhite.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
     netherlandsBlue.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+    document.body.style.background = `url(img/netherlands/netherlands${randomNumPic()}.jpg`;
   }
 
   // if Luxembourg is selected - change color
