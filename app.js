@@ -644,6 +644,7 @@ if (selectCountry.value === '10') {
   luxembourgRed.style.backgroundColor = "rgb(239,51,64)";
   luxembourgWhite.style.backgroundColor = "rgb(255, 255, 255)";
   luxembourgBlue.style.backgroundColor = "rgb(0,163,224)";
+  document.body.style.background = "url(img/luxembourg/luxembourg1.jpg)";
 
 }
 
@@ -1387,6 +1388,7 @@ changeColorBtn.addEventListener('click', () => {
     luxembourgRed.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
     luxembourgWhite.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
     luxembourgBlue.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+    document.body.style.background = `url(img/luxembourg/luxembourg${randomNumPic()}.jpg`;
   }
 
   // if Hungary is selected - change color
