@@ -657,7 +657,7 @@ if (selectCountry.value === '11') {
   hungaryRed.style.backgroundColor = "rgb(200,16,46)";
   hungaryWhite.style.backgroundColor = "rgb(255, 255, 255)";
   hungaryGreen.style.backgroundColor = "rgb(0,132,61)";
-
+  document.body.style.background = "url(img/hungary/hungary1.jpg)";
 }
 
 // if gabon is selected - opacity
@@ -1398,6 +1398,7 @@ changeColorBtn.addEventListener('click', () => {
     hungaryRed.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
     hungaryWhite.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
     hungaryGreen.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+    document.body.style.background = `url(img/hungary/hungary${randomNumPic()}.jpg`;
   }
 
   // if Gabon is selected - change color
