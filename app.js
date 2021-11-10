@@ -669,6 +669,8 @@ if (selectCountry.value === '12') {
   gabonGreeen.style.backgroundColor = "rgb(0,150,57)";
   gabonYellow.style.backgroundColor = "rgb(255,209,0)";
   gabonBlue.style.backgroundColor = "rgb(0,61,165)";
+  document.body.style.background = "url(img/gabon/gabon1.jpg)";
+  console.log("yup");
 
 }
 
@@ -1308,7 +1310,7 @@ changeColorBtn.addEventListener('click', () => {
     belgiumYellow.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
     belgiumRed.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
     document.body.style.background = `url(img/belgium/belgium${randomNumPic()}.jpg`;
-    console.log(document.body.style.background);
+
   }
 
   // if Côte d'Ivore is selected - change color
@@ -1339,7 +1341,7 @@ changeColorBtn.addEventListener('click', () => {
     irelandWhite.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
     irelandOrange.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
     document.body.style.background = `url(img/ireland/ireland${randomNumPic()}.jpg`;
-    console.log(document.body.style.background);
+
   }
 
   // if Nigeria is selected - change color
@@ -1408,6 +1410,7 @@ changeColorBtn.addEventListener('click', () => {
     gabonGreen.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
     gabonYellow.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
     gabonBlue.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+    document.body.style.background = `url(img/gabon/gabon${randomNumPic()}.jpg`;
   }
 
   // if Germany is selected - change color
