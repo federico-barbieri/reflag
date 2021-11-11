@@ -670,7 +670,7 @@ if (selectCountry.value === '12') {
   gabonYellow.style.backgroundColor = "rgb(255,209,0)";
   gabonBlue.style.backgroundColor = "rgb(0,61,165)";
   document.body.style.background = "url(img/gabon/gabon1.jpg)";
-  console.log("yup");
+
 
 }
 
@@ -683,7 +683,7 @@ if (selectCountry.value === '13') {
   germanyBlack.style.backgroundColor = "rgb(0, 0, 0)";
   germanyRed.style.backgroundColor = "rgb(221, 0, 0)";
   germanyYellow.style.backgroundColor = "rgb(255, 206, 0)";
-
+  document.body.style.background = "url(img/germany/germany1.jpg)";
 }
 
 // if bulgaria is selected - opacity
@@ -1420,6 +1420,7 @@ changeColorBtn.addEventListener('click', () => {
     germanyBlack.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
     germanyRed.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
     germanyYellow.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+    document.body.style.background = `url(img/germany/germany${randomNumPic()}.jpg`;
   }
 
   // if Bulgaria is selected - change color
