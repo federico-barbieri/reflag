@@ -695,6 +695,7 @@ if (selectCountry.value === '14') {
   bulgariaWhite.style.backgroundColor = "rgb(255, 255, 255)";
   bulgariaGreen.style.backgroundColor = "rgb(0, 150, 110)";
   bulgariaRed.style.backgroundColor = "rgb(214, 38, 18)";
+  document.body.style.background = "url(img/bulgaria/bulgaria1.jpg)";
 
 }
 
@@ -1430,6 +1431,7 @@ changeColorBtn.addEventListener('click', () => {
     bulgariaWhite.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
     bulgariaGreen.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
     bulgariaRed.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+    document.body.style.background = `url(img/bulgaria/bulgaria${randomNumPic()}.jpg`;
   }
 
   // if Austria is selected - change color
