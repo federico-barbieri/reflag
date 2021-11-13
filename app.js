@@ -708,7 +708,7 @@ if (selectCountry.value === '15') {
   austriaRed.style.backgroundColor = "rgb(239, 51, 64)";
   austriaWhite.style.backgroundColor = "rgb(255,255,255)";
   austriaRed2.style.backgroundColor = "rgb(239, 51, 64)";
-
+  document.body.style.background = "url(img/austria/austria1.jpg)";
 }
 
 // if armenia is selected - opacity
@@ -1441,6 +1441,7 @@ changeColorBtn.addEventListener('click', () => {
     austriaRed.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
     austriaWhite.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
     austriaRed2.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+    document.body.style.background = `url(img/austria/austria${randomNumPic()}.jpg`;
   }
 
   // if Armenia is selected - change color
