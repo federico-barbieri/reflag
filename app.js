@@ -720,6 +720,7 @@ if (selectCountry.value === '16') {
   armeniaRed.style.backgroundColor = "rgb(217, 0, 18)";
   armeniaBlue.style.backgroundColor = "rgb(0, 51, 160)";
   armeniaYellow.style.backgroundColor = "rgb(242, 168, 0)";
+  document.body.style.background = "url(img/armenia/armenia1.jpg)";
 
 }
 
@@ -1451,6 +1452,7 @@ changeColorBtn.addEventListener('click', () => {
     armeniaRed.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
     armeniaBlue.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
     armeniaYellow.style.backgroundColor = 'rgb(' + randomNum() + ',' + randomNum() + ',' + randomNum() + ')';
+    document.body.style.background = `url(img/armenia/armenia${randomNumPic()}.jpg`;
   }
 
   // if Estonia is selected - change color
